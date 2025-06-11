@@ -22,9 +22,10 @@
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
                 <div class="col-md-7 ftco-animate">
-                    <span class="subheading">Welcome to Pacific</span>
-                    <h1 class="mb-4">Discover Your Favorite Place with Us</h1>
-                    <p class="caps">Travel to the any corner of the world, without going around in circles</p>
+                    <span class="subheading" style="text-shadow:1px 1px 1px black !important">Welcome to Pacific</span>
+                    <h1 class="mb-4" style="text-shadow:1px 1px 1px black !important">Discover Your Favorite Place with Us</h1>
+                    <p class="caps" style="text-shadow:1px 1px 1px black !important">Travel to the any corner of the world, without
+                        going around in circles</p>
                 </div>
                 <a href="https://vimeo.com/45830194"
                     class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
@@ -45,7 +46,7 @@
                                     <a class="nav-link active" id="travel-tab" data-toggle="pill" href="#travel"
                                         role="tab" aria-controls="travel" aria-selected="true">Travel</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item mx-3">
                                     <a class="nav-link" id="restaurant-tab" data-toggle="pill" href="#restaurant"
                                         role="tab" aria-controls="restaurant" aria-selected="false">Restaurant</a>
                                 </li>
@@ -150,13 +151,146 @@
                                             </div>
                                         </div>
                                     </section>
+                                    {{--  --}}
+                                    <section class="ftco-section services-section">
+                                        <div class="container">
+                                            <div class="row d-flex">
+                                                <div
+                                                    class="col-md-6 order-md-first heading-section pl-md-5 ftco-animate d-flex align-items-center">
+                                                    <div class="w-100">
+                                                        <span class="subheading">Welcome to Pacific</span>
+                                                        <h2 class="mb-4" style="text-decoration: underline">Company
+                                                            Information</h2>
+                                                        <h2 class="mb-4" style="font-weight: normal !important">History
+                                                        </h2>
 
+                                                        <p>Over the 15 years, Golden Kayin has become a trusted
+                                                            partner for business ranging from start-ups to
+                                                            multinational corporations in oversea employnment
+                                                            field. We are passionate about contributing to the
+                                                            growth of our community by facilitating meaningful
+                                                            employment and fostering strong professional
+                                                            connections. As we look to the future in 2025 and
+                                                            beyond, our commitent to these founding principles
+                                                            remains stromger than ever.
+                                                        </p>
+                                                        <p><a href="#" class="btn btn-primary py-3 px-4 mt-2">Learn
+                                                                more</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="w-100 mt-2">
+                                                        {{-- <span class="subheading">this is culture</span> --}}
+                                                        <h2 class="mb-4">Culture</h2>
+
+                                                        <ul>
+                                                            <p>Our culture at Golden Kayin is defined by our core values and
+                                                                our
+                                                                shared
+                                                                commitment to making a positive impact on the lives of our
+                                                                candidates and the
+                                                                success of our clients. We driven by:
+
+                                                                <li><b>Integrity</b>: We operate with honesty, ethics, and
+                                                                    transparency in
+                                                                    all our interaction.</li>
+
+                                                                <li><b>Excellence</b>:We strive for the highest standards of
+                                                                    quality
+                                                                    and
+                                                                    professionalism in
+                                                                    everything we do.</li>
+
+                                                                <li><b>Collaboratuion</b>:We believe in the power of
+                                                                    teamwork
+                                                                    and
+                                                                    work
+                                                                    together to
+                                                                    achieve common goals.
+                                                                </li>
+
+                                                                <li><b>Innovation</b>:We are always looking for new and
+                                                                    better
+                                                                    ways
+                                                                    to
+                                                                    serve our clients
+                                                                    and candidates.
+                                                                </li>
+
+                                                                <li><b>Impact</b>:We are passionate about connecting the
+                                                                    right
+                                                                    people with
+                                                                    the right
+                                                                    opportunities, creating lasting positive change.
+                                                                </li>
+                                                            </p>
+                                                        </ul>
+                                                        {{-- <p><a href="#" class="btn btn-primary py-3 px-4">Search
+                                                                Destination</a></p> --}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="ftco-intro ftco-section ftco-no-pt">
+                                        <div class="container">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-12 text-center">
+                                                    <div class="img" style="background-image: url(images/bg_2.jpg);">
+                                                        <div class="overlay"></div>
+                                                        <h1 class="text-white my-2" style="text-decoration: underline">
+                                                            Vision and Mission Statements</h1>
+                                                        <br>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <h1 class="text-white">Our Vision</h1>
+                                                                <p>Our vision is to be the leading and most trusted
+                                                                    recruitment partner, recognized for our innovative
+                                                                    approach and unwavering commitment to
+                                                                    exceptional service. We aim to enrich the lives of
+                                                                    individuals by connecting them with meaningful
+                                                                    career opportunities where they can thrive and
+                                                                    contribute their talents. Simultaneously, we strive to
+                                                                    empower organizations by providing them with then
+                                                                    high-caliber talent they need to achieve their
+                                                                    strategic objectives and foster a culture of success.
+                                                                </p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <h1 class="text-white">Our Mission</h1>
+                                                                <p>Our mission is to empower individuals in their career
+                                                                    journeys by providing comprehensive and personalized
+                                                                    recruitment services that connect them with fulfilling
+                                                                    employment opportunities.We are dedicated to
+                                                                    understanding the unique needs of both our candidates
+                                                                    and
+                                                                    client companies, ensuring a seamless and efficient
+                                                                    matching process that leads to long-term success for all
+                                                                    stakeholders.We strive to build lasting partnerships
+                                                                    with
+                                                                    businesses across diverse industries, offering expert
+                                                                    guidance and tailored solutions to meet their envolving
+                                                                    talent acquisition needs.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        {{-- <p>We can manage your dream building A small river named
+                                                            Duden flows by their place</p>
+                                                        <p class="mb-0"><a href="#"
+                                                                class="btn btn-primary px-4 py-3">Ask
+                                                                For A
+                                                                Quote</a></p> --}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    {{--  --}}
                                     <section class="ftco-section img ftco-select-destination"
                                         style="background-image: url(images/bg_3.jpg);">
                                         <div class="container">
                                             <div class="row justify-content-center pb-4">
-                                                <div
-                                                    class="col-md-12 heading-section text-center ftco-animate">
+                                                <div class="col-md-12 heading-section text-center ftco-animate">
                                                     <span class="subheading">Pacific Provide Places</span>
                                                     <h2 class="mb-4">Select Your Destination</h2>
                                                 </div>
@@ -230,8 +364,7 @@
                                     <section class="ftco-section">
                                         <div class="container">
                                             <div class="row justify-content-center pb-4">
-                                                <div
-                                                    class="col-md-12 heading-section text-center ftco-animate">
+                                                <div class="col-md-12 heading-section text-center ftco-animate">
                                                     <span class="subheading">Destination</span>
                                                     <h2 class="mb-4">Tour Destination</h2>
                                                 </div>
@@ -368,12 +501,12 @@
                                         </div>
                                     </section>
 
-                                    <section class="ftco-section ftco-about img"style="background-image: url(images/bg_4.jpg);">
+                                    <section
+                                        class="ftco-section ftco-about img"style="background-image: url(images/bg_4.jpg);">
                                         <div class="overlay"></div>
                                         <div class="container py-md-5">
                                             <div class="row py-md-5">
-                                                <div
-                                                    class="col-md d-flex align-items-center justify-content-center">
+                                                <div class="col-md d-flex align-items-center justify-content-center">
                                                     <a href="https://vimeo.com/45830194"
                                                         class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
                                                         <span class="fa fa-play"></span>
@@ -388,16 +521,14 @@
                                             <div class="row d-flex">
                                                 <div class="col-md-12 about-intro">
                                                     <div class="row">
-                                                        <div
-                                                            class="col-md-6 d-flex align-items-stretch">
+                                                        <div class="col-md-6 d-flex align-items-stretch">
                                                             <div class="img d-flex w-100 align-items-center justify-content-center"
                                                                 style="background-image:url(images/about-1.jpg);">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 pl-md-5 py-5">
                                                             <div class="row justify-content-start pb-3">
-                                                                <div
-                                                                    class="col-md-12 heading-section ftco-animate">
+                                                                <div class="col-md-12 heading-section ftco-animate">
                                                                     <span class="subheading">About Us</span>
                                                                     <h2 class="mb-4">Make Your Tour Memorable and
                                                                         Safe With Us</h2>
@@ -578,8 +709,7 @@
                                     <section class="ftco-section">
                                         <div class="container">
                                             <div class="row justify-content-center pb-4">
-                                                <div
-                                                    class="col-md-12 heading-section text-center ftco-animate">
+                                                <div class="col-md-12 heading-section text-center ftco-animate">
                                                     <span class="subheading">Our Blog</span>
                                                     <h2 class="mb-4">Recent Post</h2>
                                                 </div>
@@ -658,12 +788,11 @@
                                         </div>
                                     </section>
 
-                                    <section class="ftco-intro ftco-section ftco-no-pt">
+                                    {{-- <section class="ftco-intro ftco-section ftco-no-pt">
                                         <div class="container">
                                             <div class="row justify-content-center">
                                                 <div class="col-md-12 text-center">
-                                                    <div class="img"
-                                                        style="background-image: url(images/bg_2.jpg);">
+                                                    <div class="img" style="background-image: url(images/bg_2.jpg);">
                                                         <div class="overlay"></div>
                                                         <h2>We Are Pacific A Travel Agency</h2>
                                                         <p>We can manage your dream building A small river named
@@ -676,11 +805,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </section>
+                                    </section> --}}
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="restaurant" role="tabpanel"
-                                aria-labelledby="restaurant-tab">
+                            <div class="tab-pane fade" id="restaurant" role="tabpanel" aria-labelledby="restaurant-tab">
                                 {{-- Restaurant content --}}
                                 <div>Restaurant Content Here</div>
                             </div>
@@ -705,4 +833,4 @@
             });
         });
     </script>
-@endpush  
+@endpush

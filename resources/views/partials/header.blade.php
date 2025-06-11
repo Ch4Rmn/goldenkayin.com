@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.css') }}">
     <link rel="stylesheet" href="{{ asset('css/jquery.timepicker.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ time() }}">
     {{--  --}}
     @stack('css')
 
