@@ -45,12 +45,29 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="{{ url('about') }}" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="{{ url('destination') }}" class="nav-link">Destination</a></li>
-                    <li class="nav-item"><a href="{{ url('menu') }}" class="nav-link">Menu</a></li>
-                    <li class="nav-item"><a href="{{ url('blog') }}" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="{{ url('contact') }}" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url('about') }}"
+                            class="nav-link {{ Request::is('about') ? 'active' : '' }}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url('destination') }}"
+                            class="nav-link {{ Request::is('destination') ? 'active' : '' }}">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url('menu') }}"
+                            class="nav-link {{ Request::is('menu') ? 'active' : '' }}">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url('image') }}"
+                            class="nav-link {{ Request::is('image') ? 'active' : '' }}">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url('contact') }}"
+                            class="nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>

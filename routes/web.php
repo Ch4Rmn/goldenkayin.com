@@ -21,8 +21,8 @@ Route::get('/about', function () {
     return view('pages.about');
 });
 
-Route::get('/blog', function () {
-    return view('pages.blog');
+Route::get('/image', function () {
+    return view('pages.image');
 });
 
 Route::get('/menu', function () {

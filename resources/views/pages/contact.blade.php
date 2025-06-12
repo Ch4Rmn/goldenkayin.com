@@ -34,7 +34,9 @@
                             <span class="fa fa-map-marker"></span>
                         </div>
                         <h3 class="mb-2">Address</h3>
-                        <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                        <p><a target="_blank" href="https://maps.app.goo.gl/vmqfMeNyn2xJoC2r8">111 North Bridge Road,
+                                #05-33
+                                Peninsula Plaza</a></p>
                     </div>
                 </div>
                 <div class="col-md-3 d-flex">
@@ -43,7 +45,7 @@
                             <span class="fa fa-phone"></span>
                         </div>
                         <h3 class="mb-2">Contact Number</h3>
-                        <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+                        <p><a href="tel:6583172927">+6583172927</a></p>
                     </div>
                 </div>
                 <div class="col-md-3 d-flex">
@@ -52,7 +54,7 @@
                             <span class="fa fa-paper-plane"></span>
                         </div>
                         <h3 class="mb-2">Email Address</h3>
-                        <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                        <p><a href="mailto:gkasingapore@gmail.com">gkasingapore@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="col-md-3 d-flex">
@@ -61,7 +63,7 @@
                             <span class="fa fa-globe"></span>
                         </div>
                         <h3 class="mb-2">Website</h3>
-                        <p><a href="#">yoursite.com</a></p>
+                        <p><a href="https://goldenkayin.com/" target="_blank">goldenkayin.com</a></p>
                     </div>
                 </div>
             </div>
@@ -93,7 +95,10 @@
                 </div>
 
                 <div class="col-md-6 d-flex">
-                    <div id="map" class="bg-white"></div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8035273336905!2d103.8508504!3d1.2922871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19c4dba54197%3A0xf0cec8ddf9486024!2sPeninsula%20Plaza!5e0!3m2!1sen!2smm!4v1749713801677!5m2!1sen!2smm"
+                        width="600" height="560" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
