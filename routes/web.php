@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\DestinationController;
+use App\Http\Controllers\ImageController;
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Facades\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,9 +24,7 @@ Route::get('/about', function () {
     return view('pages.about');
 });
 
-Route::get('/image', function () {
-    return view('pages.image');
-});
+
 
 Route::get('/menu', function () {
     return view('pages.menu');
@@ -33,10 +34,20 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 
-Route::get('/destination', function () {
-    return view('pages.destination');
-});
+// Route::get('/destination', function () {
+//     return view('pages.destination');
+// });
+
+Route::get('/destination', [DestinationController::class, 'index'])->name('pages.destination');
+Route::get('/image', [ImageController::class, 'index'])->name('pages.gallery');
 
 Route::get('/blog-detail', function () {
     return view('pages.blog-detail');
+});
+
+
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
