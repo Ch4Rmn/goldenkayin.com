@@ -12,7 +12,7 @@ class DestinationController extends Controller
      */
     public function index()
     {
-        $posts =  Post::latest()->paginate(3);
+        $posts =  Post::latest()->paginate(6);
         return view('pages.destination', compact('posts'));
     }
 
