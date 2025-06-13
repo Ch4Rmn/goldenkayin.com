@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     {{-- shwekayin logo.png --}}
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/shwekayin logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/shwekayin_logo-removebg-preview.png') }}">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
