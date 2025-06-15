@@ -89,45 +89,56 @@
     </div>
 
     <!-- Photo Grid -->
+    {{-- <div class="row mx-1">
+        @foreach ($images as $image)
+            <div class="column">
+                <img src="{{ asset('images/about-1.jpg') }}" style="width:100%">
+                image 1
+                <img src="{{ asset('images/bg_1.jpg') }}" style="width:100%">
+                image 2
+                <img src="{{ asset('images/bg_2.jpg') }}" style="width:100%">
+                image 3
+                <img src="{{ asset('images/bg_3.jpg') }}" style="width:100%">
+                image 4
+                <img src="{{ asset('images/bg_4.jpg') }}" style="width:100%">
+                image 5
+                <img src="{{ asset('images/bg_5.jpg') }}" style="width:100%">
+                image 6
+            </div>
+            <div class="column">
+                <img src="{{ asset('images/bg_5.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/bg_3.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/bg_4.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/about-1.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/bg_1.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/bg_2.jpg') }}" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="{{ asset('images/bg_4.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/bg_3.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/about-1.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/bg_1.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/bg_5.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/bg_2.jpg') }}" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="{{ asset('images/bg_5.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/bg_2.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/bg_1.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/bg_3.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/bg_4.jpg') }}" style="width:100%">
+                <img src="{{ asset('images/about-1.jpg') }}" style="width:100%">
+            </div>
+        @endforeach
+    </div> --}}
     <div class="row mx-1">
-        <div class="column">
-            <img src="{{ asset('images/about-1.jpg') }}" style="width:100%">
-            image 1
-            <img src="{{ asset('images/bg_1.jpg') }}" style="width:100%">
-            image 2
-            <img src="{{ asset('images/bg_2.jpg') }}" style="width:100%">
-            image 3
-            <img src="{{ asset('images/bg_3.jpg') }}" style="width:100%">
-            image 4
-            <img src="{{ asset('images/bg_4.jpg') }}" style="width:100%">
-            image 5
-            <img src="{{ asset('images/bg_5.jpg') }}" style="width:100%">
-            image 6
-        </div>
-        <div class="column">
-            <img src="{{ asset('images/bg_5.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/bg_3.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/bg_4.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/about-1.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/bg_1.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/bg_2.jpg') }}" style="width:100%">
-        </div>
-        <div class="column">
-            <img src="{{ asset('images/bg_4.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/bg_3.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/about-1.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/bg_1.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/bg_5.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/bg_2.jpg') }}" style="width:100%">
-        </div>
-        <div class="column">
-            <img src="{{ asset('images/bg_5.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/bg_2.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/bg_1.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/bg_3.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/bg_4.jpg') }}" style="width:100%">
-            <img src="{{ asset('images/about-1.jpg') }}" style="width:100%">
-        </div>
+        @foreach ($images as $image)
+            <div class="column">
+                {{-- <img src="{{ asset('storage/' . $image->path) }}" alt="{{ $image->alt ?? 'Gallery Image' }}"
+                    style="width:100%"> --}}
+                <img class="img-fluid" src="{{ Voyager::image($image->image) }}" alt="" style="width:100%">
+            </div>
+        @endforeach
     </div>
 @endsection
 
