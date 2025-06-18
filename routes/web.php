@@ -27,11 +27,6 @@ Route::get('/about', function () {
     return view('pages.about');
 });
 
-// Route::get('/about', function () {
-//     return view('pages.about');
-// });
-
-
 Route::get('/fmenu', function () {
     $fmenus = Fmenu::latest()->paginate(8); // Assuming you have a Fmenu model
     return view('pages.fmenu', compact('fmenus'));
