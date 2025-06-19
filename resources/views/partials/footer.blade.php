@@ -46,7 +46,8 @@
                     Copyright &copy;
                     <script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved | Desgin is made with by <a href="https://dpsmap.com" target="_blank">dpsmap.com</a>
+                    </script> All rights reserved | Desgin is made with by <a href="https://dpsmap.com"
+                        target="_blank">dpsmap.com</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
             </div>
@@ -79,6 +80,14 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="{{ asset('js/google-map.js') }}"></script>
 <script src="{{ asset('js/main.js') }}?v={{ time() }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@7.3.0/dist/turbo.min.js"></script>
+<script>
+    document.addEventListener('turbo:load', function () {
+        // Reinitialize any JavaScript that needs to be run on page load
+        // For example, reinitialize tooltips, modals, etc.
+        console.log('Page loaded with Turbo');
+    });
+</script>
 
 @stack('js')
 
