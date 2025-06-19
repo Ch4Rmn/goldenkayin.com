@@ -106,7 +106,7 @@
                             <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Send Email" class="btn btn-primary py-3 px-5">
+                            <input type="submit" value="Send EmaiL" class="btn btn-primary py-3 px-5">
                         </div>
                     </form>
 
