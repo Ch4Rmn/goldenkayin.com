@@ -7,7 +7,6 @@
 @endpush
 
 @push('css')
-    <link rel="stylesheet" href="">
     <style>
         .ftco-search .nav-pills {
             display: inline-flex !important;
@@ -16,18 +15,16 @@
 @endpush
 
 @section('content')
-
     <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_5.jpg');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
                 <div class="col-md-7 ftco-animate">
-                    <span class="subheading" style="text-shadow:1px 1px 1px black !important">Welcome to GoldenKayin</span>
-                    <h1 class="mb-4" style="text-shadow:1px 1px 1px black !important">Discover Your Favorite Place with Us
-                    </h1>
-                    <p class="caps" style="text-shadow:1px 1px 1px black !important">Travel to the any corner of the
-                        world, without
-                        going around in circles</p>
+                    <span class="subheading" style="text-shadow: 1px 1px 1px black !important;">Welcome to GoldenKayin</span>
+                    <h1 class="mb-4" style="text-shadow: 1px 1px 1px black !important;">Discover Your Favorite Place with
+                        Us</h1>
+                    <p class="caps" style="text-shadow: 1px 1px 1px black !important;">Travel to the any corner of the
+                        world, without going around in circles</p>
                 </div>
                 <a href="https://vimeo.com/45830194"
                     class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
@@ -46,11 +43,15 @@
                             <ul class="nav nav-pills justify-content-center" id="custom-tab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="travel-tab" data-toggle="pill" href="#travel"
-                                        role="tab" aria-controls="travel" aria-selected="true">Travel</a>
+                                        role="tab" aria-controls="travel" aria-selected="true" style="">Agency
+                                        Employment and
+                                        Tour</a>
                                 </li>
-                                <li class="nav-item mx-3">
+                                <li class="nav-item" style="margin: 0px 20px !important;">
                                     <a class="nav-link" id="restaurant-tab" data-toggle="pill" href="#restaurant"
-                                        role="tab" aria-controls="restaurant" aria-selected="false">Restaurant</a>
+                                        role="tab" aria-controls="restaurant" aria-selected="false" style="">Shwe
+                                        Kayin
+                                        Restaurant</a>
                                 </li>
                             </ul>
                         </div>
@@ -63,6 +64,7 @@
                                 <div>
                                     <section class="ftco-section services-section">
                                         <div class="container">
+                                            <h1 class="" style="margin-bottom: 20px">Golden Kayin Pte.Ltd</h1>
                                             <div class="row d-flex">
                                                 <div
                                                     class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
@@ -282,12 +284,7 @@
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                        {{-- <p>We can manage your dream building A small river named
-                        Duden flows by their place</p>
-                    <p class="mb-0"><a href="#"
-                            class="btn btn-primary px-4 py-3">Ask
-                            For A
-                            Quote</a></p> --}}
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -329,6 +326,17 @@
                                                         <div class="item">
                                                             <div class="project-destination">
                                                                 <a href="#" class="img"
+                                                                    style="background-image: url(https://www.law.ox.ac.uk/sites/default/files/migrated/burma-bagan-myanmar-420x0.jpg);">
+                                                                    <div class="text">
+                                                                        <h3>Myanmar ( Burma )</h3>
+                                                                        <span>7 Tours</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="project-destination">
+                                                                <a href="#" class="img"
                                                                     style="background-image: url(images/place-1.jpg);">
                                                                     <div class="text">
                                                                         <h3>Philippines</h3>
@@ -340,9 +348,9 @@
                                                         <div class="item">
                                                             <div class="project-destination">
                                                                 <a href="#" class="img"
-                                                                    style="background-image: url(images/place-2.jpg);">
+                                                                    style="background-image: url(https://visitworld.today/media/blog/previews/gJT6NTlOrj63Mj4yoq5rJojC4jczc9tuGML1chz1.jpg);">
                                                                     <div class="text">
-                                                                        <h3>Canada</h3>
+                                                                        <h3>Vietnam</h3>
                                                                         <span>2 Tours</span>
                                                                     </div>
                                                                 </a>
@@ -362,9 +370,9 @@
                                                         <div class="item">
                                                             <div class="project-destination">
                                                                 <a href="#" class="img"
-                                                                    style="background-image: url(images/place-4.jpg);">
+                                                                    style="background-image: url(https://cdn.britannica.com/49/102749-050-B4874C95/Kuala-Lumpur-Malaysia.jpg);">
                                                                     <div class="text">
-                                                                        <h3>Autralia</h3>
+                                                                        <h3>Malaysia</h3>
                                                                         <span>5 Tours</span>
                                                                     </div>
                                                                 </a>
@@ -373,14 +381,74 @@
                                                         <div class="item">
                                                             <div class="project-destination">
                                                                 <a href="#" class="img"
-                                                                    style="background-image: url(images/place-5.jpg);">
+                                                                    style="background-image: url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/542000/542607-singapore.jpg);">
                                                                     <div class="text">
-                                                                        <h3>Greece</h3>
+                                                                        <h3>Singapore</h3>
                                                                         <span>7 Tours</span>
                                                                     </div>
                                                                 </a>
                                                             </div>
                                                         </div>
+                                                        {{--  --}}
+                                                        <div class="item">
+                                                            <div class="project-destination">
+                                                                <a href="#" class="img"
+                                                                    style="background-image: url(https://skyticket.com/guide/wp-content/uploads/2024/12/94a5b8f8-shutterstock_2410881993-680x510-680x510.jpg);">
+                                                                    <div class="text">
+                                                                        <h3>Brunei</h3>
+                                                                        <span>7 Tours</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        {{--  --}}
+                                                        <div class="item">
+                                                            <div class="project-destination">
+                                                                <a href="#" class="img"
+                                                                    style="background-image: url(https://www.planetware.com/photos-large/IND/india-delhi-red-fort.jpg);">
+                                                                    <div class="text">
+                                                                        <h3>India</h3>
+                                                                        <span>7 Tours</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="project-destination">
+                                                                <a href="#" class="img"
+                                                                    style="background-image: url(https://saigontourism.com.vn/wp-content/uploads/2017/12/Pak-Ou-Caves-Luang-Prabang-Laos-2.jpg);">
+                                                                    <div class="text">
+                                                                        <h3>Laos</h3>
+                                                                        <span>7 Tours</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="project-destination">
+                                                                <a href="#" class="img"
+                                                                    style="background-image: url(https://saigontourism.com.vn/wp-content/uploads/2017/12/Pak-Ou-Caves-Luang-Prabang-Laos-2.jpg);">
+                                                                    <div class="text">
+                                                                        <h3>Cambodia</h3>
+                                                                        <span>7 Tours</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        {{--  --}}
+
+                                                        <div class="item">
+                                                            <div class="project-destination">
+                                                                <a href="#" class="img"
+                                                                    style="background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/00/d8/ef/caption.jpg?w=600&h=600&s=1);">
+                                                                    <div class="text">
+                                                                        <h3>Timor-Leste</h3>
+                                                                        <span>7 Tours</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        {{--  --}}
                                                     </div>
                                                 </div>
                                             </div>
@@ -413,11 +481,8 @@
                                                                     <h3><a href="#">{{ $post->title }}</a></h3>
                                                                     <span class="fa fa-map-marker"></span>
                                                                     {{ Str::limit(strip_tags($post->body), 50) }}
-                                                                    {{-- <a href="{{ url('/blogs/' . $blog->slug) }}">Read more</a> --}}
                                                                     <ul>
-                                                                        {{-- <li><span class="flaticon-shower"></span>2</li>
-                                    <li><span class="flaticon-king-size"></span>3</li>
-                                    <li><span class="flaticon-mountains"></span>Near Mountain</li> --}}
+
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -428,328 +493,217 @@
                                             </div>
 
                                         </div>
-                                </div>
-    </section>
+                                    </section>
+                                    {{--  --}}
+                                    <section
+                                        class="ftco-section ftco-about img"style="background-image: url(images/bg_4.jpg);">
+                                        <div class="overlay"></div>
+                                        <div class="container py-md-5">
+                                            <div class="row py-md-5">
+                                                <div class="col-md d-flex align-items-center justify-content-center">
+                                                    <a href="https://vimeo.com/45830194"
+                                                        class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+                                                        <span class="fa fa-play"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
 
-    <section class="ftco-section ftco-about img"style="background-image: url(images/bg_4.jpg);">
-        <div class="overlay"></div>
-        <div class="container py-md-5">
-            <div class="row py-md-5">
-                <div class="col-md d-flex align-items-center justify-content-center">
-                    <a href="https://vimeo.com/45830194"
-                        class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
-                        <span class="fa fa-play"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="ftco-section ftco-about ftco-no-pt img">
-        <div class="container">
-            <div class="row d-flex">
-                <div class="col-md-12 about-intro">
-                    <div class="row">
-                        <div class="col-md-6 d-flex align-items-stretch">
-                            <div class="img d-flex w-100 align-items-center justify-content-center"
-                                style="background-image:url(images/about-1.jpg);">
-                            </div>
-                        </div>
-                        <div class="col-md-6 pl-md-5 py-5">
-                            <div class="row justify-content-start pb-3">
-                                <div class="col-md-12 heading-section ftco-animate">
-                                    {{-- <span class="subheading">About Us</span> --}}
-                                    <h2 class="mb-4">Make Your Tour Memorable and
-                                        Safe With Us</h2>
-                                    <p>Far far away, behind the word mountains, far
-                                        from the countries Vokalia and
-                                        Consonantia, there live the blind texts.
-                                        Separated they live in Bookmarksgrove right
-                                        at the coast of the Semantics, a large
-                                        language ocean.</p>
-                                    <p><a href="#" class="btn btn-primary">Book
-                                            Your
-                                            Destination</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="ftco-section testimony-section bg-bottom" style="background-image: url(images/bg_1.jpg);">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row justify-content-center pb-4">
-                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                    <span class="subheading">Testimonial</span>
-                    <h2 class="mb-4">Tourist Feedback</h2>
-                </div>
-            </div>
-            <div class="row ftco-animate">
-                <div class="col-md-12">
-                    <div class="carousel-testimony owl-carousel">
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-                                    <p class="star">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </p>
-                                    <p class="mb-4">Far far away, behind the word
-                                        mountains, far from the countries
-                                        Vokalia and Consonantia, there live the
-                                        blind texts.</p>
-                                    <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                                        </div>
-                                        <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing
-                                                Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-                                    <p class="star">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </p>
-                                    <p class="mb-4">Far far away, behind the word
-                                        mountains, far from the countries
-                                        Vokalia and Consonantia, there live the
-                                        blind texts.</p>
-                                    <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_2.jpg)">
-                                        </div>
-                                        <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing
-                                                Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-                                    <p class="star">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </p>
-                                    <p class="mb-4">Far far away, behind the word
-                                        mountains, far from the countries
-                                        Vokalia and Consonantia, there live the
-                                        blind texts.</p>
-                                    <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_3.jpg)">
-                                        </div>
-                                        <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing
-                                                Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-                                    <p class="star">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </p>
-                                    <p class="mb-4">Far far away, behind the word
-                                        mountains, far from the countries
-                                        Vokalia and Consonantia, there live the
-                                        blind texts.</p>
-                                    <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                                        </div>
-                                        <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing
-                                                Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-                                    <p class="star">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </p>
-                                    <p class="mb-4">Far far away, behind the word
-                                        mountains, far from the countries
-                                        Vokalia and Consonantia, there live the
-                                        blind texts.</p>
-                                    <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_2.jpg)">
-                                        </div>
-                                        <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing
-                                                Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    {{-- <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center pb-4">
-                <div class="col-md-12 heading-section text-center ftco-animate">
-                    <span class="subheading">Our Blog</span>
-                    <h2 class="mb-4">Recent Post</h2>
-                </div>
-            </div>
-            <div class="row d-flex">
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-                        </a>
-                        <div class="text">
-                            <div class="d-flex align-items-center mb-4 topp">
-                                <div class="one">
-                                    <span class="day">11</span>
-                                </div>
-                                <div class="two">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">September</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Most Popular
-                                    Place In This World</a></h3>
-                            <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
-                            <p><a href="#" class="btn btn-primary">Read
-                                    more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-                        </a>
-                        <div class="text">
-                            <div class="d-flex align-items-center mb-4 topp">
-                                <div class="one">
-                                    <span class="day">11</span>
-                                </div>
-                                <div class="two">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">September</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Most Popular
-                                    Place In This World</a></h3>
-                            <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
-                            <p><a href="#" class="btn btn-primary">Read
-                                    more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-                        </a>
-                        <div class="text">
-                            <div class="d-flex align-items-center mb-4 topp">
-                                <div class="one">
-                                    <span class="day">11</span>
-                                </div>
-                                <div class="two">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">September</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Most Popular
-                                    Place In This World</a></h3>
-                            <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
-                            <p><a href="#" class="btn btn-primary">Read
-                                    more</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-    {{-- <section class="ftco-intro ftco-section ftco-no-pt">
+                                    <section class="ftco-section ftco-about ftco-no-pt img">
                                         <div class="container">
-                                            <div class="row justify-content-center">
-                                                <div class="col-md-12 text-center">
-                                                    <div class="img" style="background-image: url(images/bg_2.jpg);">
-                                                        <div class="overlay"></div>
-                                                        <h2>We Are Pacific A Travel Agency</h2>
-                                                        <p>We can manage your dream building A small river named
-                                                            Duden flows by their place</p>
-                                                        <p class="mb-0"><a href="#"
-                                                                class="btn btn-primary px-4 py-3">Ask
-                                                                For A
-                                                                Quote</a></p>
+                                            <div class="row d-flex">
+                                                <div class="col-md-12 about-intro">
+                                                    <div class="row">
+                                                        <div class="col-md-6 d-flex align-items-stretch">
+                                                            <div class="img d-flex w-100 align-items-center justify-content-center"
+                                                                style="background-image:url(images/about-1.jpg);">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 pl-md-5 py-5">
+                                                            <div class="row justify-content-start pb-3">
+                                                                <div class="col-md-12 heading-section ftco-animate">
+                                                                    <span class="subheading">About Us</span>
+                                                                    <h2 class="mb-4">Make Your Tour Memorable and Safe
+                                                                        With Us</h2>
+                                                                    <p>Far far away, behind the word mountains, far from the
+                                                                        countries Vokalia and Consonantia, there live the
+                                                                        blind texts. Separated they live in Bookmarksgrove
+                                                                        right at the coast of the Semantics, a large
+                                                                        language ocean.</p>
+                                                                    <p><a href="#" class="btn btn-primary">Book Your
+                                                                            Destination</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </section> --}}
-    </div>
-    </div>
-    <div class="tab-pane fade" id="restaurant" role="tabpanel" aria-labelledby="restaurant-tab">
-        {{-- Restaurant content --}}
-        <div>Restaurant Content Here</div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+                                    </section>
+
+                                    <section class="ftco-section testimony-section bg-bottom"
+                                        style="background-image: url(images/bg_1.jpg);">
+                                        <div class="overlay"></div>
+                                        <div class="container">
+                                            <div class="row justify-content-center pb-4">
+                                                <div
+                                                    class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                                                    <span class="subheading">Testimonial</span>
+                                                    <h2 class="mb-4">Tourist Feedback</h2>
+                                                </div>
+                                            </div>
+                                            <div class="row ftco-animate">
+                                                <div class="col-md-12">
+                                                    <div class="carousel-testimony owl-carousel">
+                                                        <div class="item">
+                                                            <div class="testimony-wrap py-4">
+                                                                <div class="text">
+                                                                    <p class="star">
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                    </p>
+                                                                    <p class="mb-4">Far far away, behind the word
+                                                                        mountains, far from the countries Vokalia and
+                                                                        Consonantia, there live the blind texts.</p>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="user-img"
+                                                                            style="background-image: url(images/person_1.jpg)">
+                                                                        </div>
+                                                                        <div class="pl-3">
+                                                                            <p class="name">Roger Scott</p>
+                                                                            <span class="position">Marketing Manager</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="testimony-wrap py-4">
+                                                                <div class="text">
+                                                                    <p class="star">
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                    </p>
+                                                                    <p class="mb-4">Far far away, behind the word
+                                                                        mountains, far from the countries Vokalia and
+                                                                        Consonantia, there live the blind texts.</p>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="user-img"
+                                                                            style="background-image: url(images/person_2.jpg)">
+                                                                        </div>
+                                                                        <div class="pl-3">
+                                                                            <p class="name">Roger Scott</p>
+                                                                            <span class="position">Marketing Manager</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="testimony-wrap py-4">
+                                                                <div class="text">
+                                                                    <p class="star">
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                    </p>
+                                                                    <p class="mb-4">Far far away, behind the word
+                                                                        mountains, far from the countries Vokalia and
+                                                                        Consonantia, there live the blind texts.</p>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="user-img"
+                                                                            style="background-image: url(images/person_3.jpg)">
+                                                                        </div>
+                                                                        <div class="pl-3">
+                                                                            <p class="name">Roger Scott</p>
+                                                                            <span class="position">Marketing Manager</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="testimony-wrap py-4">
+                                                                <div class="text">
+                                                                    <p class="star">
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                    </p>
+                                                                    <p class="mb-4">Far far away, behind the word
+                                                                        mountains, far from the countries Vokalia and
+                                                                        Consonantia, there live the blind texts.</p>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="user-img"
+                                                                            style="background-image: url(images/person_1.jpg)">
+                                                                        </div>
+                                                                        <div class="pl-3">
+                                                                            <p class="name">Roger Scott</p>
+                                                                            <span class="position">Marketing Manager</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="testimony-wrap py-4">
+                                                                <div class="text">
+                                                                    <p class="star">
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                    </p>
+                                                                    <p class="mb-4">Far far away, behind the word
+                                                                        mountains, far from the countries Vokalia and
+                                                                        Consonantia, there live the blind texts.</p>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="user-img"
+                                                                            style="background-image: url(images/person_2.jpg)">
+                                                                        </div>
+                                                                        <div class="pl-3">
+                                                                            <p class="name">Roger Scott</p>
+                                                                            <span class="position">Marketing Manager</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    {{--  --}}
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="restaurant" role="tabpanel" aria-labelledby="restaurant-tab">
+                                {{-- Restaurant content --}}
+                                <div>Restaurant Content Here</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection
 
 @push('scripts')
     <script>
-        $(document).ready(function() {
-            $('a[data-toggle="pill"]').on('shown.bs.tab', function(e) {
-                var target = $(e.target).attr("href")
-                if (target == '#travel') {
-                    console.log("Travel tab is now active");
-                } else if (target == '#restaurant') {
-                    console.log("Restaurant tab is now active");
-                }
-            });
-        });
+        // No custom JS needed for Bootstrap tabs if Bootstrap JS is loaded
     </script>
 @endpush

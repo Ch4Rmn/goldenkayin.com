@@ -36,8 +36,8 @@
         <div class="container">
             <img src="{{ asset('images/shwekayin_logo-removebg-preview.png') }}" alt=""
                 style="width: 80px;height:70px">
-            <a class=" navbar-brand" style="margin-left: 10px;text-shadow:1px 1px 1px black"
-                href="/">Shwe<span>Kayin</span></a>
+            <a class=" navbar-brand" style="margin-left: 15px;text-shadow:1px 1px 1px black"
+                href="/">Golden<span>Kayin</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -57,7 +57,8 @@
                             class="nav-link {{ Request::is('destination') ? 'active' : '' }}">Destination</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('fmenu') }}" class="nav-link {{ Request::is('fmenu') ? 'active' : '' }}">Foods
+                        <a href="{{ url('fmenu') }}"
+                            class="nav-link {{ Request::is('fmenu') ? 'active' : '' }}">Foods
                         </a>
                     </li>
                     <li class="nav-item">
@@ -70,9 +71,13 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-instagram"></i></a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/share/1C8Shr6CHZ/" target="_blank"
+                            class="nav-link"><i class="fa fa-facebook"></i></a></li>
+                    <li class="nav-item"><a href="http://www.youtube.com/@GoldenKayinFamily" target="_blank"
+                            class="nav-link"><i class="fa fa-youtube"></i></a></li>
+                    <li class="nav-item"><a
+                            href="https://www.instagram.com/goldenkayinfamily?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank" class="nav-link"><i class="fa fa-instagram"></i></a></li>
                 </ul>
                 <ul>
                     <span class="" style="color:white !important">Monday - Friday: 10am – 6pm

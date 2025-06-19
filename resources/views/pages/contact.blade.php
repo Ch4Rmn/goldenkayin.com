@@ -11,10 +11,26 @@
 @endpush
 
 @section('content')
+
+
     <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
         <div class="overlay"></div>
         <div class="container">
+            {{--  --}}
+
+            {{--  --}}
             <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+                @if (session('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert"
+                        style="z-index: 9999;width: 100%;
+                                box-shadow: 2px 2px #81ff00;">
+                        <strong style="text-shadow:1px 1px 1px black;font-size: x-large;">Success!</strong>
+                        <p style="text-shadow:1px 1px 1px black;color:black">{{ session('success') }}</p>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @endif
                 <div class="col-md-9 ftco-animate pb-5 text-center">
                     <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
                                     class="fa fa-chevron-right"></i></a></span> <span>Contact us <i
@@ -74,21 +90,23 @@
         <div class="container">
             <div class="row block-9">
                 <div class="col-md-6 order-md-last d-flex">
-                    <form action="#" class="bg-light p-5 contact-form">
+
+                    <form action="{{ route('contact.send') }}" method="POST" class="bg-light p-5 contact-form">
+                        @csrf
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
+                            <input type="text" class="form-control" placeholder="Your Name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email">
+                            <input type="text" class="form-control" placeholder="Your Email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <input type="text" class="form-control" placeholder="Subject" name="subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                            <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                            <input type="submit" value="Send Email" class="btn btn-primary py-3 px-5">
                         </div>
                     </form>
 

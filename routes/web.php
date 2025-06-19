@@ -5,6 +5,7 @@ use TCG\Voyager\Models\Post;
 use TCG\Voyager\Facades\Voyager;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DestinationController;
 
 /*
@@ -20,7 +21,7 @@ use App\Http\Controllers\DestinationController;
 
 Route::get('/', function () {
     $posts = Post::latest()->take(6)->get();
-    return view('pages.index',compact('posts'));
+    return view('pages.index', compact('posts'));
 });
 
 Route::get('/about', function () {
@@ -35,6 +36,8 @@ Route::get('/fmenu', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+
 
 
 Route::get('/destination', [DestinationController::class, 'index'])->name('pages.destination');
