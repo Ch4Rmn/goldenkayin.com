@@ -6,7 +6,10 @@
     @stack('meta')
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="turbo-cache-control" content="no-cache">
+    <meta name="turbo-visit-control" content="reload">
 
+    {{-- shwekayin logo --}}
     {{-- shwekayin logo.png --}}
     <link rel="icon" type="image/x-icon" href="{{ asset('images/shwekayin_logo-removebg-preview.png') }}">
 
@@ -14,6 +17,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Use Turbo (recommended newer version) -->
+    <script type="module" src="https://unpkg.com/@hotwired/turbo@7.3.0/dist/turbo.es2017-esm.js"></script>
+
+    {{-- <script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@7.3.0/dist/turbo.min.js"></script>
+    <script src="https://unpkg.com/@hotwired/turbo/dist/turbo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hotwired/turbo@7.3.0/dist/turbo.min.js"></script> --}}
+
+
 
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">

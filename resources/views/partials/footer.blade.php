@@ -80,14 +80,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="{{ asset('js/google-map.js') }}"></script>
 <script src="{{ asset('js/main.js') }}?v={{ time() }}"></script>
-<script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@7.3.0/dist/turbo.min.js"></script>
-<script>
-    document.addEventListener('turbo:load', function () {
-        // Reinitialize any JavaScript that needs to be run on page load
-        // For example, reinitialize tooltips, modals, etc.
-        console.log('Page loaded with Turbo');
-    });
-</script>
+
 
 @stack('js')
 
