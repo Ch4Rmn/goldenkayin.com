@@ -20,6 +20,14 @@
     <!-- Use Turbo (recommended newer version) -->
     <script type="module" src="https://unpkg.com/@hotwired/turbo@7.3.0/dist/turbo.es2017-esm.js"></script>
 
+
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.js"
+        integrity="sha512-P3/SDm/poyPMRBbZ4chns8St8nky2t8aeG09fRjunEaKMNEDKjK3BuAstmLKqM7f6L1j0JBYcIRL4h2G6K6Lew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.min.js"
+        integrity="sha512-ifx27fvbS52NmHNCt7sffYPtKIvIzYo38dILIVHQ9am5XGDQ2QjSXGfUZ54Bs3AXdVi7HaItdhAtdhKz8fOFrA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
+
     {{-- <script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@7.3.0/dist/turbo.min.js"></script>
     <script src="https://unpkg.com/@hotwired/turbo/dist/turbo.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hotwired/turbo@7.3.0/dist/turbo.min.js"></script> --}}

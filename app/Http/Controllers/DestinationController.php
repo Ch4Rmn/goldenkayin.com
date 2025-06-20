@@ -37,7 +37,8 @@ class DestinationController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $post = Post::where('id', $id)->firstOrFail();
+        return view('pages.destination-show', compact('post'));
     }
 
     /**

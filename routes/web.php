@@ -38,9 +38,13 @@ Route::get('/contact', function () {
 });
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
-
+//
 
 Route::get('/destination', [DestinationController::class, 'index'])->name('pages.destination');
+
+Route::get('/destination/{id}', [DestinationController::class, 'show'])->name('pages.destination.show');
+
+//
 Route::get('/image', [ImageController::class, 'index'])->name('pages.gallery');
 
 Route::get('/blog-detail', function () {
