@@ -469,7 +469,9 @@
                                                     @foreach ($posts as $post)
                                                         <div class="col-md-4 ftco-animate">
                                                             <div class="project-wrap">
-                                                                <a href="#" class="img" style="">
+                                                                {{-- <a href="{{ route('pages.destination.show', $post->id) }}" class="img" style=""> --}}
+                                                                <a href="{{ route('pages.destination.show', $post->id) }}"
+                                                                    class="img" style="">
                                                                     <span class="price">฿{{ $post->price }}/person</span>
                                                                     {{-- {{ Voyager::image($post->image) }} --}}
                                                                     <img class="img-fluid"

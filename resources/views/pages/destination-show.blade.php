@@ -30,11 +30,13 @@
 
     <section class="ftco-section">
         <div class="container">
+            <button class="mb-3 btn bg-danger " style="color: rgb(0, 0, 0)" onclick="history.back()">Back</button>
+
             <div class="row">
                 <div class="col-md-8 ftco-animate">
                     <div class="row">
                         <div class="col">
-                            <h2 class="mb-3">{{ $post->title }}</h2>
+                            <h2 class="mb-3 " style="text-shadow: 0.3px 0.3px  black">{{ $post->title }}</h2>
                         </div>
                         <div class="col">
                             <p class="text-dark float-right">Created at -<span
@@ -61,7 +63,8 @@
                             </div>
                         </form>
                         {{--  --}}
-                        <p class="text-dark mt-3 " style="text-indent: 20px;">{{ Str::limit(strip_tags($post->body)) }}
+                        <p class="text-dark mt-3 " style="text-indent: 20px;">
+                            {{ Str::limit(strip_tags($post->body)) }}
                         </p>
                     </div>
                     {{-- $table->increments('id');
@@ -78,13 +81,9 @@
             $table->enum('status', ['PUBLISHED', 'DRAFT', 'PENDING'])->default('DRAFT');
             $table->boolean('featured')->default(0);
             $table->timestamps(); --}}
+
                 </div>
 
-
-
-
-
-                {{-- </div> --}}
     </section>
 
 
