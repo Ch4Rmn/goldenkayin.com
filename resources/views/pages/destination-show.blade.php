@@ -11,15 +11,16 @@
 @endpush
 
 @section('content')
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
+    <section class="hero-wrap hero-wrap-2 js-fullheight"
+        style="background-image: url('{{ asset('storage/' . $post->image) }}');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
                 <div class="col-md-9 ftco-animate pb-5 text-center">
                     <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
-                                    class="fa fa-chevron-right"></i></a></span> <span>Destination List <i
+                                    class="fa fa-chevron-right"></i></a></span> <span>Tour List <i
                                 class="fa fa-chevron-right"></i></span></p>
-                    <h1 class="mb-0 bread">Destination Detail</h1>
+                    <h1 class="mb-0 bread">Tours List</h1>
                 </div>
             </div>
         </div>
@@ -29,14 +30,61 @@
 
     <section class="ftco-section">
         <div class="container">
-            {{ $post->title }}
-        </div>
+            <div class="row">
+                <div class="col-md-8 ftco-animate">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="mb-3">{{ $post->title }}</h2>
+                        </div>
+                        <div class="col">
+                            <p class="text-dark float-right">Created at -<span
+                                    class="text-success">{{ $post->created_at->diffForHumans() }}</span> </p>
+                        </div>
+                    </div>
+
+                    {{-- <p>{{ $post->excerpt }}</p> --}}
+
+                    <br>
+
+                    <p><img src="{{ asset('storage/' . $post->image) }}" alt="" class="img-fluid"></p>
+                    {{-- <p>Meta Description: {{ $post->meta_description }}</p>
+                    <p>Meta Keywords: {{ $post->meta_keywords }}</p> --}}
+                </div>
+
+                <div class="col-md-4 sidebar ftco-animate">
+                    <div class="sidebar-box">
+                        <h3 class="heading">Search</h3>
+                        <form action="#" class="search-form">
+                            <div class="form-group">
+                                <span class="icon fa fa-search"></span>
+                                <input type="text" class="form-control" placeholder="Search...">
+                            </div>
+                        </form>
+                        {{--  --}}
+                        <p class="text-dark mt-3 " style="text-indent: 20px;">{{ Str::limit(strip_tags($post->body)) }}
+                        </p>
+                    </div>
+                    {{-- $table->increments('id');
+            $table->integer('author_id');
+            $table->integer('category_id')->nullable();
+            $table->string('title');
+            $table->string('seo_title')->nullable();
+            $table->text('excerpt');
+            $table->text('body');
+            $table->string('image')->nullable();
+            $table->string('slug')->unique();
+            $table->text('meta_description');
+            $table->text('meta_keywords');
+            $table->enum('status', ['PUBLISHED', 'DRAFT', 'PENDING'])->default('DRAFT');
+            $table->boolean('featured')->default(0);
+            $table->timestamps(); --}}
+                </div>
 
 
 
 
 
-        {{-- </div> --}}
+                {{-- </div> --}}
     </section>
 
 
