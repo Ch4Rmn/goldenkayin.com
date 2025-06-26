@@ -52,7 +52,7 @@
     {{-- <div class=" m-3 bg-danger" style="width:100%"></div> --}}
 
     {{--  --}}
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="z-">
         <div class="container">
             <img src="{{ asset('images/shwekayin_logo-removebg-preview.png') }}" alt=""
                 style="width: 80px;height:70px">

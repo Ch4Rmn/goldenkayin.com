@@ -434,7 +434,7 @@
                                                     </tbody>
                                                 </table>
                                                 <div>
-                                                    <div class="d-flex justify-content-start my-4">
+                                                    <div class="" style="z-index:-9999">
                                                         {{ $manpowers->onEachSide(1)->links('pagination::bootstrap-5') }}
                                                     </div>
                                                 </div>
