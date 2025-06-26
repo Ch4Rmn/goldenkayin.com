@@ -78,7 +78,7 @@
                     </li> --}}
                     <li class="nav-item">
                         <a href="{{ url('manpower') }}"
-                            class="nav-link {{ Request::is('manpower') ? 'active' : '' }}">manpower</a>
+                            class="nav-link {{ Request::is('manpower') ? 'active' : '' }}">Manpower</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ url('fmenu') }}"

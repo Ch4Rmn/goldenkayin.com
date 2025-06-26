@@ -368,70 +368,78 @@
                                     </section>
                                     <br>
                                     {{--  --}}
-                                    <div class="table-responsive">
+                                    <section class="ftco-section services-section" style="">
+                                        <div class="container-fluid">
 
-                                        <h1>Available Worker</h1>
-                                        <table class="table table-bordered table-hover align-middle">
-                                            <thead class="table-dark"
-                                                style="color: #ffffff;
-    background-color: #ff6c47;
-    text-shadow: 1px 1px 1px black;">
-                                                <tr>
-                                                    <th>Image</th>
-                                                    <th>Name</th>
-                                                    <th>Ref Code</th>
-                                                    <th>Type</th>
-                                                    <th>Rest Day</th>
-                                                    <th>From Agency</th>
-                                                    <th>Available</th>
-                                                    <th>Nationality</th>
-                                                    <th>Education</th>
-                                                    <th>English</th>
-                                                    <th>Experience</th>
-                                                    {{-- <th>Created At</th> --}}
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="manpowerTableBody">
-                                                @foreach ($manpowers as $manpower)
-                                                    <tr>
-                                                        <td>
-                                                            @if ($manpower->image)
-                                                                <img src="{{ asset('storage/' . $manpower->image) }}"
-                                                                    alt="" width="60" class="rounded">
-                                                            @else
-                                                                <img src="https://via.placeholder.com/60x60?text=No+Image"
-                                                                    alt="No Image" class="rounded">
-                                                            @endif
-                                                        </td>
-                                                        <td>{{ $manpower->name }}</td>
-                                                        <td>{{ $manpower->ref_code }}</td>
-                                                        <td>{{ $manpower->type }}</td>
-                                                        <td>{{ $manpower->rest_day_preference }}</td>
-                                                        <td>{{ $manpower->from_agency }}</td>
-                                                        <td>
-                                                            @if ($manpower->available)
-                                                                <span class="badge bg-success">Yes</span>
-                                                            @else
-                                                                <span class="badge bg-secondary">No</span>
-                                                            @endif
-                                                        </td>
-                                                        <td>{{ $manpower->nationality }}</td>
-                                                        <td>{{ $manpower->education }}</td>
-                                                        <td>{{ $manpower->english }}</td>
-                                                        <td>{{ $manpower->experience }}</td>
-                                                        {{-- <td>{{ $manpower->created_at }}</td> --}}
-                                                        <td>
-                                                            <a href="{{ route('manpower.show', $manpower->id) }}"
-                                                                class="btn btn-sm btn-primary">View</a>
-                                                        </td>
-                                                    </tr>
-                                                @endforeach
-                                            </tbody>
-                                        </table>
-                                        {{ $manpowers->links() }}
-                                    </div>
+                                            <div class="table-responsive">
 
+                                                <h1>Available Worker</h1>
+                                                <table class="table table-striped table-bordered table-hover align-middle">
+                                                    <thead class="table-dark"
+                                                        style="color: #ffffff;
+                                                background-color: #ff6c47;
+                                            text-shadow: 1px 1px 1px black;">
+                                                        <tr>
+                                                            <th>Image</th>
+                                                            <th>Name</th>
+                                                            <th>Ref Code</th>
+                                                            <th>Type</th>
+                                                            <th>Rest Day</th>
+                                                            <th>From Agency</th>
+                                                            <th>Available</th>
+                                                            <th>Nationality</th>
+                                                            <th>Education</th>
+                                                            <th>English</th>
+                                                            <th>Experience</th>
+                                                            {{-- <th>Created At</th> --}}
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="manpowerTableBody">
+                                                        @foreach ($manpowers as $manpower)
+                                                            <tr>
+                                                                <td>
+                                                                    @if ($manpower->image)
+                                                                        <img src="{{ asset('storage/' . $manpower->image) }}"
+                                                                            alt="" width="60"
+                                                                            class="rounded">
+                                                                    @else
+                                                                        <img src="https://via.placeholder.com/60x60?text=No+Image"
+                                                                            alt="No Image" class="rounded">
+                                                                    @endif
+                                                                </td>
+                                                                <td>{{ $manpower->name }}</td>
+                                                                <td>{{ $manpower->ref_code }}</td>
+                                                                <td>{{ $manpower->type }}</td>
+                                                                <td>{{ $manpower->rest_day_preference }}</td>
+                                                                <td>{{ $manpower->from_agency }}</td>
+                                                                <td>
+                                                                    @if ($manpower->available)
+                                                                        <span class="badge bg-success">Yes</span>
+                                                                    @else
+                                                                        <span class="badge bg-secondary">No</span>
+                                                                    @endif
+                                                                </td>
+                                                                <td>{{ $manpower->nationality }}</td>
+                                                                <td>{{ $manpower->education }}</td>
+                                                                <td>{{ $manpower->english }}</td>
+                                                                <td>{{ $manpower->experience }}</td>
+                                                                {{-- <td>{{ $manpower->created_at }}</td> --}}
+                                                                <td>
+                                                                    <a href="{{ route('manpower.show', $manpower->id) }}"
+                                                                        class="btn btn-sm btn-primary">View</a>
+                                                                </td>
+                                                            </tr>
+                                                        @endforeach
+                                                    </tbody>
+                                                </table>
+                                                <div>
+                                                    <div class="d-flex justify-content-start my-4">
+                                                        {{ $manpowers->onEachSide(1)->links('pagination::bootstrap-5') }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </section>
                                     {{--  --}}
 
 
