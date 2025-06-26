@@ -372,7 +372,10 @@
 
                                         <h1>Available Worker</h1>
                                         <table class="table table-bordered table-hover align-middle">
-                                            <thead class="table-dark">
+                                            <thead class="table-dark"
+                                                style="color: #ffffff;
+    background-color: #ff6c47;
+    text-shadow: 1px 1px 1px black;">
                                                 <tr>
                                                     <th>Image</th>
                                                     <th>Name</th>
