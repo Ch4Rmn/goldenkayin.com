@@ -12,6 +12,25 @@
         .ftco-search .nav-pills {
             display: inline-flex !important;
         }
+
+        @media (max-width: 767.98px) {
+
+            .table thead th,
+            .table tbody td {
+                font-size: 0.95rem;
+                padding: 0.5rem;
+                vertical-align: middle;
+            }
+
+            .table img {
+                width: 40px !important;
+                height: auto;
+            }
+
+            .table-responsive {
+                margin-bottom: 1rem;
+            }
+        }
     </style>
 @endpush
 
@@ -36,7 +55,8 @@
                             <span class="subheading" style="text-shadow: 1px 1px 1px black !important;">Welcome to
                                 GoldenKayin Restaurant</span>
                             <h1 class="mb-4" style="text-shadow: 1px 1px 1px black !important;font-size:3em">Eat with
-                                GoldenKayin Restaurant</h1>
+                                Golden
+                                Kayin Restaurant</h1>
                             <p class="caps" style="text-shadow: 1px 1px 1px black !important;">Travel to the any corner of
                                 the
                                 world, without going around in circles</p>
@@ -198,8 +218,7 @@
                                     {{-- </section> --}}
 
                                     {{--  --}}
-                                    <section class="ftco-section services-section"
-                                        style="background-color: rgba(230, 230, 230, 0.508);margin-top:80px">
+                                    <section class="ftco-section services-section" style="margin-top:80px">
                                         <div class="container">
                                             <h1 class="" style="">Golden Kayin Pte.Ltd</h1>
 
@@ -287,8 +306,7 @@
                                         </div>
                                     </section>
                                     {{-- restaurant --}}
-                                    <section class="ftco-section services-section"
-                                        style="background-color: rgba(238, 232, 232, 0.871);">
+                                    <section class="ftco-section services-section" style="">
                                         <div class="container">
                                             <h1 class="" style="">Golden Kayin Restaurant Information</h1>
 
@@ -350,6 +368,68 @@
                                     </section>
                                     <br>
                                     {{--  --}}
+                                    <div class="table-responsive">
+
+                                        <h1>Available Worker</h1>
+                                        <table class="table table-bordered table-hover align-middle">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th>Image</th>
+                                                    <th>Name</th>
+                                                    <th>Ref Code</th>
+                                                    <th>Type</th>
+                                                    <th>Rest Day</th>
+                                                    <th>From Agency</th>
+                                                    <th>Available</th>
+                                                    <th>Nationality</th>
+                                                    <th>Education</th>
+                                                    <th>English</th>
+                                                    <th>Experience</th>
+                                                    {{-- <th>Created At</th> --}}
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="manpowerTableBody">
+                                                @foreach ($manpowers as $manpower)
+                                                    <tr>
+                                                        <td>
+                                                            @if ($manpower->image)
+                                                                <img src="{{ asset('storage/' . $manpower->image) }}"
+                                                                    alt="" width="60" class="rounded">
+                                                            @else
+                                                                <img src="https://via.placeholder.com/60x60?text=No+Image"
+                                                                    alt="No Image" class="rounded">
+                                                            @endif
+                                                        </td>
+                                                        <td>{{ $manpower->name }}</td>
+                                                        <td>{{ $manpower->ref_code }}</td>
+                                                        <td>{{ $manpower->type }}</td>
+                                                        <td>{{ $manpower->rest_day_preference }}</td>
+                                                        <td>{{ $manpower->from_agency }}</td>
+                                                        <td>
+                                                            @if ($manpower->available)
+                                                                <span class="badge bg-success">Yes</span>
+                                                            @else
+                                                                <span class="badge bg-secondary">No</span>
+                                                            @endif
+                                                        </td>
+                                                        <td>{{ $manpower->nationality }}</td>
+                                                        <td>{{ $manpower->education }}</td>
+                                                        <td>{{ $manpower->english }}</td>
+                                                        <td>{{ $manpower->experience }}</td>
+                                                        {{-- <td>{{ $manpower->created_at }}</td> --}}
+                                                        <td>
+                                                            <a href="{{ route('manpower.show', $manpower->id) }}"
+                                                                class="btn btn-sm btn-primary">View</a>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
+                                            </tbody>
+                                        </table>
+                                        {{ $manpowers->links() }}
+                                    </div>
+
+                                    {{--  --}}
 
 
                                     {{--  --}}
@@ -365,7 +445,8 @@
                                                         <br>
                                                         <div class="row">
                                                             <div class="col-md-6 mb-4 mb-md-0">
-                                                                <h1 class="text-white" style="font-size:2rem;">Our Vision
+                                                                <h1 class="text-white" style="font-size:2rem;">Our
+                                                                    Vision
                                                                 </h1>
                                                                 <p class="text-white"
                                                                     style="background:rgba(0,0,0,0.2);border-radius:8px;padding:1rem;">
@@ -375,28 +456,39 @@
                                                                     exceptional service. We aim to enrich the lives of
                                                                     individuals by connecting them with meaningful
                                                                     career opportunities where they can thrive and
-                                                                    contribute their talents. Simultaneously, we strive to
+                                                                    contribute their talents. Simultaneously, we strive
+                                                                    to
                                                                     empower organizations by providing them with the
                                                                     high-caliber talent they need to achieve their
-                                                                    strategic objectives and foster a culture of success.
+                                                                    strategic objectives and foster a culture of
+                                                                    success.
                                                                 </p>
                                                             </div>
                                                             <div class="col-md-6">
-                                                                <h1 class="text-white" style="font-size:2rem;">Our Mission
+                                                                <h1 class="text-white" style="font-size:2rem;">Our
+                                                                    Mission
                                                                 </h1>
                                                                 <p class="text-white"
                                                                     style="background:rgba(0,0,0,0.2);border-radius:8px;padding:1rem;">
-                                                                    Our mission is to empower individuals in their career
+                                                                    Our mission is to empower individuals in their
+                                                                    career
                                                                     journeys by providing comprehensive and personalized
-                                                                    recruitment services that connect them with fulfilling
+                                                                    recruitment services that connect them with
+                                                                    fulfilling
                                                                     employment opportunities. We are dedicated to
-                                                                    understanding the unique needs of both our candidates
-                                                                    and client companies, ensuring a seamless and efficient
-                                                                    matching process that leads to long-term success for all
-                                                                    stakeholders. We strive to build lasting partnerships
+                                                                    understanding the unique needs of both our
+                                                                    candidates
+                                                                    and client companies, ensuring a seamless and
+                                                                    efficient
+                                                                    matching process that leads to long-term success for
+                                                                    all
+                                                                    stakeholders. We strive to build lasting
+                                                                    partnerships
                                                                     with
-                                                                    businesses across diverse industries, offering expert
-                                                                    guidance and tailored solutions to meet their evolving
+                                                                    businesses across diverse industries, offering
+                                                                    expert
+                                                                    guidance and tailored solutions to meet their
+                                                                    evolving
                                                                     talent acquisition needs.
                                                                 </p>
                                                             </div>
@@ -842,72 +934,7 @@
                                         </div>
                                     </section> --}}
                                     {{--  --}}
-                                    <div class="table-responsive">
-                                        <div class="mb-3">
-                                            
-                                            {{-- <form method="GET" action="{{ url('/') }}" class="mb-3">
-                                                <input type="text" name="search" class="form-control"
-                                                    placeholder="Search..." value="{{ request('search') }}">
-                                                    <button type="submit">Submit</button>
-                                            </form> --}}
-                                        </div>
-                                        <table class="table table-bordered table-hover align-middle">
-                                            <thead class="table-dark">
-                                                <tr>
-                                                    <th>Image</th>
-                                                    <th>Name</th>
-                                                    <th>Ref Code</th>
-                                                    <th>Type</th>
-                                                    <th>Rest Day</th>
-                                                    <th>From Agency</th>
-                                                    <th>Available</th>
-                                                    <th>Nationality</th>
-                                                    <th>Education</th>
-                                                    <th>English</th>
-                                                    <th>Experience</th>
-                                                    <th>Created At</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="manpowerTableBody">
-                                                @foreach ($manpowers as $manpower)
-                                                    <tr>
-                                                        <td>
-                                                            @if ($manpower->image)
-                                                                <img src="{{ asset('storage/' . $manpower->image) }}"
-                                                                    alt="" width="60" class="rounded">
-                                                            @else
-                                                                <img src="https://via.placeholder.com/60x60?text=No+Image"
-                                                                    alt="No Image" class="rounded">
-                                                            @endif
-                                                        </td>
-                                                        <td>{{ $manpower->name }}</td>
-                                                        <td>{{ $manpower->ref_code }}</td>
-                                                        <td>{{ $manpower->type }}</td>
-                                                        <td>{{ $manpower->rest_day_preference }}</td>
-                                                        <td>{{ $manpower->from_agency }}</td>
-                                                        <td>
-                                                            @if ($manpower->available)
-                                                                <span class="badge bg-success">Yes</span>
-                                                            @else
-                                                                <span class="badge bg-secondary">No</span>
-                                                            @endif
-                                                        </td>
-                                                        <td>{{ $manpower->nationality }}</td>
-                                                        <td>{{ $manpower->education }}</td>
-                                                        <td>{{ $manpower->english }}</td>
-                                                        <td>{{ $manpower->experience }}</td>
-                                                        <td>{{ $manpower->created_at }}</td>
-                                                        <td>
-                                                            <a href="{{ route('manpower.show', $manpower->id) }}"
-                                                                class="btn btn-sm btn-primary">View</a>
-                                                        </td>
-                                                    </tr>
-                                                @endforeach
-                                            </tbody>
-                                        </table>
-                                        {{ $manpowers->links() }}
-                                    </div>
+
 
                                     @push('scripts')
                                         <script>
