@@ -9,14 +9,14 @@
 @push('css')
     <style>
         /* * {
-                                                                                                                                box-sizing: border-box;
-                                                                                                                            }
+                                                                                                                                                                                                                                box-sizing: border-box;
+                                                                                                                                                                                                                            }
 
-                                                                                                                            body {
-                                                                                                                                background-color: #f1f1f1;
-                                                                                                                                padding: 20px;
-                                                                                                                                font-family: Arial;
-                                                                                                                            } */
+                                                                                                                                                                                                                            body {
+                                                                                                                                                                                                                                background-color: #f1f1f1;
+                                                                                                                                                                                                                                padding: 20px;
+                                                                                                                                                                                                                                font-family: Arial;
+                                                                                                                                                                                                                            } */
 
         /* Center website */
         .main {
@@ -30,8 +30,8 @@
         }
 
         /* .row {
-                                                                                                                                margin: 8px -16px;
-                                                                                                                            } */
+                                                                                                                                                                                                                                margin: 8px -16px;
+                                                                                                                                                                                                                            } */
 
         /* Add padding BETWEEN each column */
         .row,
@@ -75,7 +75,8 @@
 @endpush
 
 @section('content')
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
+    <section class="hero-wrap hero-wrap-2 js-fullheight"
+        style="background-image: url('https://i.pinimg.com/736x/72/99/17/72991795a1b6e27945317ee346b094be.jpg');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
@@ -105,8 +106,7 @@
                     <img src="{{ asset('images/Naw.TinTin.png') }}" alt="Naw.TinTin" style="width:100%;">
                     <h3 style="margin-top: 7px">Naw Tin Tin </h3>
                     <span style="color:red">CEO</span>
-                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
-                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+
                 </div>
             </div>
             <div class="column " style="background-color: #f7f7f7; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
@@ -114,8 +114,7 @@
                     <img src="{{ asset('images/Saw Kyaw Zin.jpg') }}" alt="Saw Kyaw Zin" style="width:100%;">
                     <h3 style="margin-top: 7px">Saw Kyaw Zin </h3>
                     <span style="color:red">Managing Director</span>
-                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
-                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+
                 </div>
             </div>
             <div class="column " style="background-color: #f7f7f7; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
@@ -123,8 +122,7 @@
                     <img src="{{ asset('images/Jimmy.png') }}" alt="Jimmy" style="width:100%;">
                     <h3 style="margin-top: 7px">Jimmy </h3>
                     <span style="color:red">Marketing Manager</span>
-                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
-                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+
                 </div>
             </div>
             <div class="column " style="background-color: #f7f7f7; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
@@ -132,13 +130,26 @@
                     <img src="{{ asset('images/Naw Engyin Phwe.jpg') }}" alt="Mountains" style="width:100%;">
                     <h3 class="" style="margin-top: 7px">Naw Engyin Phwe </h3>
                     <span style="color:red">Admin Manager</span>
-                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
-                        oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+
+                </div>
+            </div>
+            <div class="column " style="background-color: #f7f7f7; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                <div class="content" style="">
+                    <img src="{{ asset('images/sd.jpg') }}" alt="Naw.TinTin" style="width:100%;">
+                    <h3 style="margin-top: 7px">NG SIEW LENG
+                    </h3>
+                    <span style="color:red">Marketing Manager</span>
+
                 </div>
             </div>
             <!-- END GRID -->
         </div>
         <hr>
+        <video width="100%" height="500" autoplay muted controls poster="{{ asset('') }}">
+            <source src="{{ asset('images/mingalar goldenkayin.mp4') }}" type="video/mp4">
+            <source src="{{ asset('images/mingalar goldenkayin.mp4') }}" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
 
         <div class="content"
             style="padding: 10px 10px;background-color: #f1e9e9; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
@@ -180,11 +191,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center">
-                    <div class="img" style="background-image: url(images/bg_2.jpg);">
+                    <div class="img"
+                        style="background-image: url(https://fredcoletravel.com/wp-content/uploads//2016/01/Kyone-Htaw-Waterfall.jpg);">
                         <div class="overlay"></div>
                         <div class="row justify-content-center">
                             <div class="col-md-6 mb-4 mb-md-0">
-                                <h1 style="text-shadow: 1px 1px 1px rgb(0, 0, 0);color:black">Office</h1>
+                                <h1 style="text-shadow: 1px 1px 1px rgb(0, 0, 0);color:white">Office</h1>
                                 <div class="p-3" style="text-align:left;background-color:rgba(255,255,255,0.104);">
                                     <p>Location - 111 North Bridge Road, #05-33 Peninsula Plaza</p>
                                     <p>Phone - Tel: <a href="tel:6583172927">+6583172927</a></p>
@@ -192,7 +204,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <h1 style="text-shadow: 1px 1px 1px rgb(0, 0, 0);color:black">Business hours</h1>
+                                <h1 style="text-shadow: 1px 1px 1px rgb(0, 0, 0);color:white">Business hours</h1>
                                 <div class="p-3" style="text-align:left;background-color:rgba(255,255,255,0.104);">
                                     <p>Monday - Friday: 10am – 6pm</p>
                                     <p>Sunday: 9am - 6pm</p>

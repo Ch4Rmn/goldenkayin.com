@@ -68,7 +68,8 @@
 @endpush
 
 @section('content')
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
+    <section class="hero-wrap hero-wrap-2 js-fullheight"
+        style="background-image: url('https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqmhzdBj-fWyn0RQ_ZuQO2wvT-29nBvEBzV3F2OkrlF3zG_fRIEnzdRFQDOgrV10aRsUD4LqrOxSa2styvpExNIhM0ZJkq0jTgKrbMabYG6gQxBtAv3S8sBHZehV8nD1IjiGrrc=w675-h390-n-k-no');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">

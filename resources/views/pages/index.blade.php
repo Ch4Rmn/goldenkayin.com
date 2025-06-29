@@ -12,21 +12,17 @@
         .ftco-search .nav-pills {
             display: inline-flex !important;
         }
-
         @media (max-width: 767.98px) {
-
             .table thead th,
             .table tbody td {
                 font-size: 0.95rem;
                 padding: 0.5rem;
                 vertical-align: middle;
             }
-
             .table img {
                 width: 40px !important;
                 height: auto;
             }
-
             .table-responsive {
                 margin-bottom: 1rem;
             }
@@ -369,11 +365,12 @@
                                     <br>
                                     {{--  --}}
                                     <section class="ftco-section services-section" style="">
+                                        <h1>Available Worker</h1>
                                         <div class="container-fluid">
 
                                             <div class="table-responsive">
 
-                                                <h1>Available Worker</h1>
+
                                                 <table class="table table-striped table-bordered table-hover align-middle">
                                                     <thead class="table-dark"
                                                         style="color: #ffffff;
@@ -434,7 +431,7 @@
                                                     </tbody>
                                                 </table>
                                                 <div>
-                                                    <div class="" style="z-index:-9999">
+                                                    <div class="" style="z-index:-1">
                                                         {{ $manpowers->onEachSide(1)->links('pagination::bootstrap-5') }}
                                                     </div>
                                                 </div>
@@ -448,7 +445,8 @@
                                         <div class="container">
                                             <div class="row justify-content-center">
                                                 <div class="col-12 text-center">
-                                                    <div class="img" style="background-image: url(images/bg_2.jpg);">
+                                                    <div class="img"
+                                                        style="background-image: url(https://luxurymyanmarrivercruises.com/uploads/Kan_thar_yar_bridge_hpa_an.jpg);">
                                                         <div class="overlay"></div>
                                                         <h1 class="text-white my-2" style="text-decoration: underline">
                                                             Vision and Mission Statements

@@ -20,7 +20,6 @@
     <!-- Use Turbo (recommended newer version) -->
     <script type="module" src="https://unpkg.com/@hotwired/turbo@7.3.0/dist/turbo.es2017-esm.js"></script>
 
-
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.js"
         integrity="sha512-P3/SDm/poyPMRBbZ4chns8St8nky2t8aeG09fRjunEaKMNEDKjK3BuAstmLKqM7f6L1j0JBYcIRL4h2G6K6Lew=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
@@ -45,14 +44,14 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ time() }}">
     {{--  --}}
     @stack('css')
-
 </head>
 
 <body>
     {{-- <div class=" m-3 bg-danger" style="width:100%"></div> --}}
 
     {{--  --}}
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="z-">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"
+        style="z-index:1">
         <div class="container">
             <img src="{{ asset('images/shwekayin_logo-removebg-preview.png') }}" alt=""
                 style="width: 80px;height:70px">

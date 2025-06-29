@@ -11,7 +11,8 @@
 @endpush
 
 @section('content')
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
+    <section class="hero-wrap hero-wrap-2 js-fullheight"
+        style="background-image: url('https://media02.stockfood.com/largepreviews/MjIxMDg4NzM1Nw==/71318947-Kan-Thar-Yar-Lake-Hpa-An-Kayin-State-Karen-State-Myanmar-Burma-Asia.jpg');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
@@ -24,7 +25,7 @@
             </div>
         </div>
     </section>
-    
+
 
 
 
@@ -57,11 +58,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center">
-                    <div class="img" style="background-image: url(images/bg_2.jpg);">
+                    <div class="img img-fluid"
+                        style="background-image: url('https://cdn.digitalagencybangkok.com/file/client-cdn/gnlm/wp-content/uploads/2023/11/p1-second-1-2.jpg');object-fit: cover;">
                         <div class="overlay"></div>
-                        <h2>We Are Pacific A Travel Agency</h2>
+                        <h2>We Are Golden Kayin Travel Agency</h2>
                         <p>We can manage your dream building A small river named Duden flows by their place</p>
-                        <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Ask For A Quote</a></p>
+                        <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Content us</a></p>
                     </div>
                 </div>
             </div>
