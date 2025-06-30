@@ -7,9 +7,13 @@
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                         live the blind texts.</p>
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-                        <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                        <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                        <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                        <li class="ftco-animate"><a href="http://www.youtube.com/@GoldenKayinFamily"><span
+                                    class="fa fa-youtube"></span></a></li>
+                        <li class="ftco-animate"><a href="https://www.facebook.com/share/1C8Shr6CHZ/"><span
+                                    class="fa fa-facebook"></span></a></li>
+                        <li class="ftco-animate"><a
+                                href="https://www.instagram.com/goldenkayinfamily?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><span
+                                    class="fa fa-instagram"></span></a></li>
                     </ul>
                 </div>
             </div>
@@ -32,7 +36,7 @@
                             <li><a href="tel:6583172927" target="_blank"><span class="icon fa fa-phone"></span><span
                                         class="text">+6583172927</span></a></li>
                             <li><a href="mailto:gkasingapore@gmail.com" target="_blank"><span
-                                        class="icon fa fa-paper-plane"></span><span
+                                        class="icon fa fa-envelope"></span><span
                                         class="text">gkasingapore@gmail.com</span></a></li>
                         </ul>
                     </div>

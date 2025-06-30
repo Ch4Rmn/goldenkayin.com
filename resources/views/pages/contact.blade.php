@@ -68,7 +68,7 @@
                 <div class="col-md-3 d-flex">
                     <div class="align-self-stretch box p-4 text-center">
                         <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fa fa-paper-plane"></span>
+                            <span class="fa fa-envelope"></span>
                         </div>
                         <h3 class="mb-2">Email Address</h3>
                         <p><a href="mailto:gkasingapore@gmail.com">gkasingapore@gmail.com</a></p>
