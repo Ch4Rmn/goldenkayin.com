@@ -9,14 +9,14 @@
 @push('css')
     <style>
         /* * {
-                                                                                                                                                                                                                                box-sizing: border-box;
-                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                box-sizing: border-box;
+                                                                                                                                                                                                                                                                                            }
 
-                                                                                                                                                                                                                            body {
-                                                                                                                                                                                                                                background-color: #f1f1f1;
-                                                                                                                                                                                                                                padding: 20px;
-                                                                                                                                                                                                                                font-family: Arial;
-                                                                                                                                                                                                                            } */
+                                                                                                                                                                                                                                                                                            body {
+                                                                                                                                                                                                                                                                                                background-color: #f1f1f1;
+                                                                                                                                                                                                                                                                                                padding: 20px;
+                                                                                                                                                                                                                                                                                                font-family: Arial;
+                                                                                                                                                                                                                                                                                            } */
 
         /* Center website */
         .main {
@@ -30,8 +30,8 @@
         }
 
         /* .row {
-                                                                                                                                                                                                                                margin: 8px -16px;
-                                                                                                                                                                                                                            } */
+                                                                                                                                                                                                                                                                                                margin: 8px -16px;
+                                                                                                                                                                                                                                                                                            } */
 
         /* Add padding BETWEEN each column */
         .row,
@@ -94,13 +94,44 @@
     <div class="main">
 
         <br>
-        <h1 class="fw-bold">About Us</h1>
-        <p>Resize the browser window to see the responsive effect.</p>
+        {{-- <h1 class="fw-bold">About Us</h1> --}}
+        {{-- <p>Resize the browser window to see the responsive effect.</p> --}}
 
         <!-- Portfolio Gallery Grid -->
-        <h2 class="text-center" style="text-decoration: underline;">Management Team</h2>
-        <br>
-        <div class="row">
+        {{-- <br> --}}
+        <section class="team-section">
+            <h2 class="text-center" style="text-decoration: underline;">Management Team</h2>
+            {{-- <div class="team-title">Management Team</div> --}}
+            <ul class="team-list">
+                <li class="team-member">
+                    <img src="{{ asset('images/Naw.TinTin.png') }}" alt="Naw Tin Tin">
+                    <div class="member-name">Naw Tin Tin</div>
+                    <div class="member-role">CEO</div>
+                </li>
+                <li class="team-member">
+                    <img src="{{ asset('images/Saw Kyaw Zin.jpg') }}" alt="Saw Kyaw Zin">
+                    <div class="member-name">Saw Kyaw Zin</div>
+                    <div class="member-role">Managing Director</div>
+                </li>
+                <li class="team-member">
+                    <img src="{{ asset('images/Jimmy.png') }}" alt="Jimmy">
+                    <div class="member-name">Jimmy</div>
+                    <div class="member-role">Marketing Manager</div>
+                </li>
+                <li class="team-member">
+                    <img src="{{ asset('images/Naw Engyin Phwe.jpg') }}" alt="Naw Engyin Phwe">
+                    <div class="member-name">Naw Engyin Phwe</div>
+                    <div class="member-role">Admin Manager</div>
+                </li>
+                <li class="team-member">
+                    <img src="{{ asset('images/sd.jpg') }}" alt="NG SIEW LENG">
+                    <div class="member-name">NG SIEW LENG</div>
+                    <div class="member-role">Marketing Manager</div>
+                </li>
+            </ul>
+        </section>
+        {{--  --}}
+        {{-- <div class="row">
             <div class="column " style="background-color: #f7f7f7; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
                 <div class="content" style="">
                     <img src="{{ asset('images/Naw.TinTin.png') }}" alt="Naw.TinTin" style="width:100%;">
@@ -143,13 +174,13 @@
                 </div>
             </div>
             <!-- END GRID -->
-        </div>
+        </div> --}}
         <hr>
-        <video width="100%" height="500" autoplay muted controls poster="{{ asset('') }}">
+        {{-- <video width="100%" height="500" autoplay muted controls poster="{{ asset('') }}">
             <source src="{{ asset('images/mingalar goldenkayin.mp4') }}" type="video/mp4">
             <source src="{{ asset('images/mingalar goldenkayin.mp4') }}" type="video/ogg">
             Your browser does not support the video tag.
-        </video>
+        </video> --}}
 
         <div class="content"
             style="padding: 10px 10px;background-color: #f1e9e9; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
@@ -222,6 +253,86 @@
 
     @push('css')
         <style>
+            .team-section {
+                max-width: 1000px;
+                margin: 40px auto;
+                padding: 24px 16px;
+                background: #fff;
+                border-radius: 18px;
+                box-shadow: 0 6px 32px rgba(70, 90, 100, 0.08);
+            }
+
+            .team-title {
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 32px;
+                color: #353535;
+            }
+
+            .team-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 28px;
+                justify-content: center;
+                padding: 0;
+                list-style: none;
+            }
+
+            .team-member {
+                background: #f2f6fc;
+                border-radius: 14px;
+                padding: 18px 20px;
+                width: 300px;
+                box-shadow: 0 2px 12px rgba(80, 120, 190, 0.04);
+                text-align: center;
+                transition: box-shadow .2s;
+            }
+
+            .team-member:hover {
+                box-shadow: 0 6px 20px rgba(80, 120, 190, 0.15);
+            }
+
+            .team-member img {
+                width: 200px;
+                height: 200px;
+                border-radius: 0%;
+                object-fit: cover;
+                margin-bottom: 12px;
+                border: 3px solid #e7eaf6;
+                background: #fff;
+            }
+
+            .member-name {
+                font-size: 1.1rem;
+                font-weight: 700;
+                margin: 10px 0 4px 0;
+                color: #232b4c;
+            }
+
+            .member-role {
+                color: #6d6d9e;
+                background: #d0e7ff;
+                font-size: .98rem;
+                padding: 4px 12px;
+                border-radius: 8px;
+                display: inline-block;
+                margin-bottom: 0;
+            }
+
+            @media (max-width: 600px) {
+                .team-list {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 18px;
+                }
+
+                .team-member {
+                    width: 90vw;
+                    max-width: 320px;
+                }
+            }
+
             @media (max-width: 767.98px) {
                 .ftco-intro .row>.col-md-6 {
                     margin-bottom: 1.5rem;

@@ -13,7 +13,8 @@
 @section('content')
 
 
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
+    <section class="hero-wrap hero-wrap-2 js-fullheight"
+        style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/09/67/c4/eb/hpa-an.jpg');">
         <div class="overlay"></div>
         <div class="container">
             {{--  --}}
@@ -114,8 +115,8 @@
 
                 <div class="col-md-6 d-flex">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8035273336905!2d103.8508504!3d1.2922871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19c4dba54197%3A0xf0cec8ddf9486024!2sPeninsula%20Plaza!5e0!3m2!1sen!2smm!4v1749713801677!5m2!1sen!2smm"
-                        width="600" height="560" style="border:0;" allowfullscreen="" loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.084632703368!2d100.594338!3d13.7133238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f173e58f229%3A0xdb7c7b1e84a5b0d7!2sGolden%20kayin%20family!5e0!3m2!1sen!2smm!4v1751268363937!5m2!1sen!2smm"
+                        width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
@@ -128,9 +129,9 @@
                 <div class="col-md-12 text-center">
                     <div class="img" style="background-image: url(images/bg_2.jpg);">
                         <div class="overlay"></div>
-                        <h2>We Are Pacific A Travel Agency</h2>
+                        <h2>We Are Golden Kayin Travel Agency</h2>
                         <p>We can manage your dream building A small river named Duden flows by their place</p>
-                        <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Ask For A Quote</a></p>
+                        {{-- <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Ask For A Quote</a></p> --}}
                     </div>
                 </div>
             </div>

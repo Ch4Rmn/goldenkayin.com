@@ -102,7 +102,7 @@
                             href="https://www.instagram.com/goldenkayinfamily?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                             target="_blank" class="nav-link"><i class="fa fa-instagram"></i></a></li>
                 </ul>
-                <ul>
+                <ul class="navbar-nav ml-auto">
                     <span class="" style="color:white !important">Monday - Friday: 10am – 6pm
                         | Sunday: 9am -
                         6pm</span>
