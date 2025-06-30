@@ -84,11 +84,7 @@
     </section>
 
     <!-- Header -->
-    <div class="text-center ">
-        <h1 style="margin-top: 30px">Image Gallery</h1>
-        <p>Resize the browser window to see the responsive effect.</p>
-    </div>
-
+   
     <!-- Photo Grid -->
     {{-- <div class="row mx-1">
         @foreach ($images as $image)
