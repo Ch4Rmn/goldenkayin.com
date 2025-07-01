@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'About Page')
+@section('title', 'Image Page')
 
 @push('meta')
     <meta name="description" content="Home Page Description">
@@ -84,7 +84,7 @@
     </section>
 
     <!-- Header -->
-   
+
     <!-- Photo Grid -->
     {{-- <div class="row mx-1">
         @foreach ($images as $image)

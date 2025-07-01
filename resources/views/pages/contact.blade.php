@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'About Page')
+@section('title', 'Contact Page')
 
 @push('meta')
     <meta name="description" content="Home Page Description">
