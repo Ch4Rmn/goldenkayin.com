@@ -72,8 +72,9 @@
                     Copyright &copy;
                     <script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved | Desgin is made with by <a href="https://dpsmap.com"
-                        target="_blank">dpsmap.com</a>
+                    </script> All rights reserved | Desgin is made with <a href="https://dpsmap.com"
+                        target="_blank">dpsmap.com</a> by <a href="https://github.com/Ch4Rmn" target="_blank">Lin Htut
+                        Kyaw</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
             </div>
