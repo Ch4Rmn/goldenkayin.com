@@ -113,3 +113,11 @@
         </div>
     </nav>
     <!-- END nav -->
+
+    <style>
+        /* Remove text-shadow on navbar links hover */
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link:focus {
+            text-shadow: none !important;
+        }
+    </style>
