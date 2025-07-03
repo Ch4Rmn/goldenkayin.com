@@ -10,7 +10,7 @@
     {{-- <link rel="stylesheet" href=""> --}}
     <style>
         div.owl-dots {
-            margin-top: -200px;
+            /* margin-top: -50px; */
         }
     </style>
 @endpush
@@ -106,7 +106,7 @@
     {{--  --}}
 
     <section class="ftco-section testimony-section bg-bottom container"
-        style="background-image:url(https://i.pinimg.com/736x/83/c5/43/83c543b597757e9a03f37c6f2f857448.jpg); object-fit: cover; height:900px">
+        style="background-image:url(https://i.pinimg.com/736x/83/c5/43/83c543b597757e9a03f37c6f2f857448.jpg); object-fit: cover; height:1100px">
         <div class="overlay"></div>
         <div class="container">
             <div class="row justify-content-center pb-4">
