@@ -12,17 +12,21 @@
         .ftco-search .nav-pills {
             display: inline-flex !important;
         }
+
         @media (max-width: 767.98px) {
+
             .table thead th,
             .table tbody td {
                 font-size: 0.95rem;
                 padding: 0.5rem;
                 vertical-align: middle;
             }
+
             .table img {
                 width: 40px !important;
                 height: auto;
             }
+
             .table-responsive {
                 margin-bottom: 1rem;
             }
@@ -43,19 +47,18 @@
                                 GoldenKayin</span>
                             <h1 class="mb-4" style="text-shadow: 1px 1px 1px black !important;font-size:3em">Enjoy Your
                                 Journey with Golden Kayin</h1>
-                            <p class="caps" style="text-shadow: 1px 1px 1px black !important;">Travel to the any corner of
+                            {{-- <p class="caps" style="text-shadow: 1px 1px 1px black !important;">Travel to the any corner of
                                 the
-                                world, without going around in circles</p>
+                                world, without going around in circles</p> --}}
                         </div>
                         <div class="col">
                             <span class="subheading" style="text-shadow: 1px 1px 1px black !important;">Welcome to
-                                GoldenKayin Restaurant</span>
+                                ShweKayin Restaurant</span>
                             <h1 class="mb-4" style="text-shadow: 1px 1px 1px black !important;font-size:3em">Eat with
-                                Golden
-                                Kayin Restaurant</h1>
-                            <p class="caps" style="text-shadow: 1px 1px 1px black !important;">Travel to the any corner of
+                                ShweKayin Restaurant</h1>
+                            {{-- <p class="caps" style="text-shadow: 1px 1px 1px black !important;">Travel to the any corner of
                                 the
-                                world, without going around in circles</p>
+                                world, without going around in circles</p> --}}
                         </div>
                     </div>
 
@@ -304,14 +307,14 @@
                                     {{-- restaurant --}}
                                     <section class="ftco-section services-section" style="">
                                         <div class="container">
-                                            <h1 class="" style="">Golden Kayin Restaurant Information</h1>
+                                            <h1 class="" style="">Shwe Kayin Restaurant Information</h1>
 
                                             <div class="row d-flex">
 
                                                 <div
                                                     class="col-md-6 order-md-first heading-section pl-md-5 ftco-animate d-flex align-items-center">
                                                     <div class="w-100">
-                                                        <span class="subheading">Welcome to GoldenKayin Restaurant
+                                                        <span class="subheading">Welcome to Shwe Kayin Restaurant
                                                             Information</span>
                                                         <h2 class="mb-4" style="text-decoration: underline">Company
                                                             Information</h2>
@@ -398,8 +401,7 @@
                                                                 <td>
                                                                     @if ($manpower->image)
                                                                         <img src="{{ asset('storage/' . $manpower->image) }}"
-                                                                            alt="" width="60"
-                                                                            class="rounded">
+                                                                            alt="" width="60" class="rounded">
                                                                     @else
                                                                         <img src="https://via.placeholder.com/60x60?text=No+Image"
                                                                             alt="No Image" class="rounded">

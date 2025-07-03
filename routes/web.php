@@ -28,11 +28,11 @@ Route::get('/', function (Request $request) {
 
     if ($request->filled('search')) {
         $search = $request->input('search');
-        $query->where(function($q) use ($search) {
+        $query->where(function ($q) use ($search) {
             $q->where('name', 'like', "%{$search}%")
-              ->orWhere('ref_code', 'like', "%{$search}%")
-              ->orWhere('type', 'like', "%{$search}%")
-              ->orWhere('nationality', 'like', "%{$search}%");
+                ->orWhere('ref_code', 'like', "%{$search}%")
+                ->orWhere('type', 'like', "%{$search}%")
+                ->orWhere('nationality', 'like', "%{$search}%");
             // Add more fields as needed
         });
     }
@@ -48,7 +48,7 @@ Route::get('/about', function () {
 Route::get('/fmenu', function () {
     $fmenus = Fmenu::latest()->paginate(8); // Assuming you have a Fmenu model
     return view('pages.fmenu', compact('fmenus'));
-});
+})->name('pages.fmenu');
 
 Route::get('/contact', function () {
     return view('pages.contact');

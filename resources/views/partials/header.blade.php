@@ -81,7 +81,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ url('fmenu') }}"
-                            class="nav-link {{ Request::is('fmenu') ? 'active' : '' }}">Foods
+                            class="nav-link {{ Request::is('fmenu') ? 'active' : '' }}">Restaurant
                         </a>
                     </li>
                     <li class="nav-item">

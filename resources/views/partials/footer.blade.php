@@ -23,21 +23,43 @@
                     <h2 class="ftco-heading-2">Have a Questions?</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            {{-- 111 North Bridge Road, #05-33
-                            Peninsula Plaza
-
-                            Tel: +6583172927
-
-                            gkasingapore@gmail.com --}}
-                            <li><span class="icon fa fa-map-marker"></span><span class="text"><a target="_blank"
-                                        href="https://maps.app.goo.gl/vmqfMeNyn2xJoC2r8">111 North Bridge Road,
-                                        #05-33
-                                        Peninsula Plaza</a></span></li>
-                            <li><a href="tel:6583172927" target="_blank"><span class="icon fa fa-phone"></span><span
-                                        class="text">+6583172927</span></a></li>
-                            <li><a href="mailto:gkasingapore@gmail.com" target="_blank"><span
-                                        class="icon fa fa-envelope"></span><span
-                                        class="text">gkasingapore@gmail.com</span></a></li>
+                            @if (Route::is('pages.fmenu'))
+                                <li>
+                                    <span class="icon fa fa-map-marker"></span>
+                                    <span class="text">
+                                        <a target="_blank" href="https://maps.app.goo.gl/4kQw8y8kQw8y8kQw8">
+                                            2 4 Sukhumvit 71 Rd, Phra Khanong, Watthana, Bangkok 10110, Thailand
+                                        </a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="tel:0816060788" target="_blank">
+                                        <span class="icon fa fa-phone"></span>
+                                        <span class="text">081-606-0788</span>
+                                    </a>
+                                </li>
+                            @else
+                                <li>
+                                    <span class="icon fa fa-map-marker"></span>
+                                    <span class="text">
+                                        <a target="_blank" href="https://maps.app.goo.gl/vmqfMeNyn2xJoC2r8">
+                                            111 North Bridge Road, #05-33 Peninsula Plaza
+                                        </a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="tel:6583172927" target="_blank">
+                                        <span class="icon fa fa-phone"></span>
+                                        <span class="text">+6583172927</span>
+                                    </a>
+                                </li>
+                            @endif
+                            <li>
+                                <a href="mailto:gkasingapore@gmail.com" target="_blank">
+                                    <span class="icon fa fa-envelope"></span>
+                                    <span class="text">gkasingapore@gmail.com</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
