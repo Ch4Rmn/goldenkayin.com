@@ -52,7 +52,7 @@ Route::get('/fmenu', function () {
 
 Route::get('/contact', function () {
     return view('pages.contact');
-});
+})->name('pages.contact');
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 //

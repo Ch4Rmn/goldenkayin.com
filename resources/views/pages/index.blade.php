@@ -3,7 +3,7 @@
 @section('title', 'Home Page')
 
 @push('meta')
-    <meta name="keyword" content="Kayin Travel Tour and Restaurant,">
+    <meta name="keyword" content="Kayin Travel Tour and Restaurant">
     <meta name="description" content="Kayin Travel Tour and Restaurant">
 @endpush
 

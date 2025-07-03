@@ -4,8 +4,9 @@
             <div class="col-md pt-5">
                 <div class="ftco-footer-widget pt-md-5 mb-4">
                     <h2 class="ftco-heading-2">About</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                        live the blind texts.</p>
+                    <p>Golden Kayin is dedicated to sharing the rich flavors and warm hospitality of Kayin culture.
+                        Whether you’re visiting our restaurant or connecting with our manpower and travel services, we
+                        strive to deliver authentic experiences and exceptional service to every guest and client.</p>
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
                         <li class="ftco-animate"><a href="http://www.youtube.com/@GoldenKayinFamily"><span
                                     class="fa fa-youtube"></span></a></li>
@@ -38,6 +39,63 @@
                                         <span class="text">081-606-0788</span>
                                     </a>
                                 </li>
+                                {{-- myanmargoldenkayin2023@gmail.com --}}
+                                <li>
+                                    <a href="mailto:myanmargoldenkayin2023@gmail.com" target="_blank">
+                                        <span class="icon fa fa-envelope"></span>
+                                        <span class="text">myanmargoldenkayin2023@gmail.com</span>
+                                    </a>
+                                </li>
+                            @elseif (Route::is('pages.contact'))
+                                <li>
+                                    <h5 style="text-decoration:underline">Shwe Kayin Restaurant</h5>
+                                </li>
+
+                                <li>
+                                    <span class="icon fa fa-map-marker"></span>
+                                    <span class="text">
+                                        <a target="_blank" href="https://maps.app.goo.gl/4kQw8y8kQw8y8kQw8">
+                                            2 4 Sukhumvit 71 Rd, Phra Khanong, Watthana, Bangkok 10110, Thailand
+                                        </a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="tel:0816060788" target="_blank">
+                                        <span class="icon fa fa-phone"></span>
+                                        <span class="text">081-606-0788</span>
+                                    </a>
+                                </li>
+                                {{-- myanmargoldenkayin2023@gmail.com --}}
+                                <li>
+                                    <a href="mailto:myanmargoldenkayin2023@gmail.com" target="_blank">
+                                        <span class="icon fa fa-envelope"></span>
+                                        <span class="text">myanmargoldenkayin2023@gmail.com</span>
+                                    </a>
+                                </li>
+                                {{-- Singapore Office --}}
+                                <li>
+                                    <h5 style="text-decoration:underline">Golden Kayin Man Power</h5>
+                                </li>
+                                <li>
+                                    <span class="icon fa fa-map-marker"></span>
+                                    <span class="text">
+                                        <a target="_blank" href="https://maps.app.goo.gl/vmqfMeNyn2xJoC2r8">
+                                            111 North Bridge Road, #05-33 Peninsula Plaza
+                                        </a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="tel:6583172927" target="_blank">
+                                        <span class="icon fa fa-phone"></span>
+                                        <span class="text">+6583172927</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:gkasingapore@gmail.com" target="_blank">
+                                        <span class="icon fa fa-envelope"></span>
+                                        <span class="text">gkasingapore@gmail.com</span>
+                                    </a>
+                                </li>
                             @else
                                 <li>
                                     <span class="icon fa fa-map-marker"></span>
@@ -53,13 +111,13 @@
                                         <span class="text">+6583172927</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="mailto:gkasingapore@gmail.com" target="_blank">
+                                        <span class="icon fa fa-envelope"></span>
+                                        <span class="text">gkasingapore@gmail.com</span>
+                                    </a>
+                                </li>
                             @endif
-                            <li>
-                                <a href="mailto:gkasingapore@gmail.com" target="_blank">
-                                    <span class="icon fa fa-envelope"></span>
-                                    <span class="text">gkasingapore@gmail.com</span>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>

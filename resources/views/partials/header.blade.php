@@ -20,6 +20,7 @@
     <!-- Use Turbo (recommended newer version) -->
     <script type="module" src="https://unpkg.com/@hotwired/turbo@7.3.0/dist/turbo.es2017-esm.js"></script>
 
+
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.js"
         integrity="sha512-P3/SDm/poyPMRBbZ4chns8St8nky2t8aeG09fRjunEaKMNEDKjK3BuAstmLKqM7f6L1j0JBYcIRL4h2G6K6Lew=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
@@ -32,7 +33,7 @@
     <script src="https://cdn.jsdelivr.net/gh/hotwired/turbo@7.3.0/dist/turbo.min.js"></script> --}}
 
 
-
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> --}}
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
@@ -55,7 +56,7 @@
         <div class="container">
             <img src="{{ asset('images/shwekayin_logo-removebg-preview.png') }}" alt=""
                 style="width: 80px;height:70px">
-            <a class=" navbar-brand" style="margin-left: 15px;text-shadow:1px 1px 1px black"
+            <a class=" navbar-brand" style="margin-left: 15px;text-shadow:0.3px 0.3px 0.3px black"
                 href="/">Golden<span>Kayin</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,11 +66,11 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="/" style="text-shadow:1px 1px 1px black"
+                        <a href="/" style="text-shadow:0.3px 0.3px 0.3px black"
                             class="nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('about') }}" style="text-shadow:1px 1px 1px black"
+                        <a href="{{ url('about') }}" style="text-shadow:0.3px 0.3px 0.3px black"
                             class="nav-link {{ Request::is('about') ? 'active' : '' }}">About</a>
                     </li>
                     {{-- <li class="nav-item">
@@ -77,38 +78,46 @@
                             class="nav-link {{ Request::is('destination') ? 'active' : '' }}">destination</a>
                     </li> --}}
                     <li class="nav-item">
-                        <a href="{{ url('manpower') }}" style="text-shadow:1px 1px 1px black"
+                        <a href="{{ url('manpower') }}" style="text-shadow:0.3px 0.3px 0.3px black"
                             class="nav-link {{ Request::is('manpower') ? 'active' : '' }}">Manpower</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('fmenu') }}" style="text-shadow:1px 1px 1px black"
+                        <a href="{{ url('fmenu') }}" style="text-shadow:0.3px 0.3px 0.3px black"
                             class="nav-link {{ Request::is('fmenu') ? 'active' : '' }}">Restaurant
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('image') }}" style="text-shadow:1px 1px 1px black"
+                        <a href="{{ url('image') }}" style="text-shadow:0.3px 0.3px 0.3px black"
                             class="nav-link {{ Request::is('image') ? 'active' : '' }}">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('contact') }}" style="text-shadow:1px 1px 1px black"
-                            class="nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact</a>
+                        <a href="{{ url('contact') }}" style="text-shadow:0.3px 0.3px 0.3px black"
+                            class="nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact Us</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="https://www.facebook.com/share/1C8Shr6CHZ/" target="_blank"
-                            class="nav-link"><i class="fa fa-facebook"></i></a></li>
-                    <li class="nav-item"><a href="http://www.youtube.com/@GoldenKayinFamily" target="_blank"
-                            class="nav-link"><i class="fa fa-youtube"></i></a></li>
-                    <li class="nav-item"><a
+                    <li class="nav-item" style="text-shadow:0.3px 0.3px 0.3px black;color:blue"><a
+                            href="https://www.facebook.com/share/1C8Shr6CHZ/" target="_blank" class="nav-link"><i
+                                class="fa fa-facebook"></i></a></li>
+                    <li class="nav-item" style="text-shadow:0.3px 0.3px 0.3px black;color:red"><a
+                            href="http://www.youtube.com/@GoldenKayinFamily" target="_blank" class="nav-link"><i
+                                class="fa fa-youtube"></i></a></li>
+                    <li class="nav-item" style="text-shadow:0.3px 0.3px 0.3px black"><a
                             href="https://www.instagram.com/goldenkayinfamily?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                             target="_blank" class="nav-link"><i class="fa fa-instagram"></i></a></li>
                 </ul>
-                <ul>
-                    <span class="" style="color:white !important;text-shadow:1px 1px 1px black">Monday - Friday:
-                        10am – 6pm
-                        | Sunday: 9am -
-                        6pm</span>
-                </ul>
+                {{-- <ul class="navbar-nav align-items-center ms-lg-3">
+                    <li class="nav-item">
+                        <span class="badge bg-gradient shadow-sm px-3 py-2 d-flex align-items-center"
+                            style="background:; color: #222; font-size: 1rem; border-radius: 1.5rem;">
+                            <i class="fa fa-clock-o me-2" style="color:#fff; font-size:1.2rem;"></i>
+                            <span>
+                                <strong style="font-weight:normal">Mon-Fri:</strong> 10am–6pm&nbsp;|&nbsp;<strong
+                                    style="font-weight:normal">Sun:</strong> 9am–6pm
+                            </span>
+                        </span>
+                    </li>
+                </ul> --}}
             </div>
         </div>
     </nav>
@@ -117,7 +126,7 @@
     <style>
         /* Remove text-shadow on navbar links hover */
         .navbar-nav .nav-link:hover,
-        .navbar-nav .nav-link:focus {
+        .navbar-nav .nav-link:active {
             text-shadow: none !important;
         }
     </style>

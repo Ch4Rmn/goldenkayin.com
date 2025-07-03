@@ -3,7 +3,8 @@
 @section('title', 'Foods Menu Page')
 
 @push('meta')
-    <meta name="description" content="Home Page Description">
+    <meta name="keyword" content="Kayin Travel Tour and Restaurant">
+    <meta name="description" content="Kayin Travel Tour and Restaurant">
 @endpush
 
 @push('css')
@@ -50,23 +51,23 @@
                     <div class="col-md-3 ftco-animate">
                         <div class="project-wrap">
                             <a href="#" class="img" style="">
-                                <span class="price">฿
-                                    {{ $fmenu->price }}/person</span>
+                                {{-- <span class="price">฿
+                                    {{ $fmenu->price }}/person</span> --}}
                                 {{-- {{ Voyager::image($post->image) }} --}}
                                 <img class="img-fluid" src="{{ Voyager::image($fmenu->image) }}" alt=""
                                     width="300">
                             </a>
-                            <div class="text p-4">
+                            {{-- <div class="text p-4">
                                 <h3><a href="#">{{ $fmenu->title }}</a></h3>
                                 <span class="days">{{ $fmenu->created_at->format('Y m d H:i:s') }}</span>
-                                {{-- <span class="fa fa-map-marker"></span> {{ Str::limit(strip_tags($fmenu->body), 50) }} --}}
-                                {{-- <a href="{{ url('/blogs/' . $blog->slug) }}">Read more</a> --}}
+                                <span class="fa fa-map-marker"></span> {{ Str::limit(strip_tags($fmenu->body), 50) }}
+                                <a href="{{ url('/blogs/' . $blog->slug) }}">Read more</a>
                                 <ul>
-                                    {{-- <li><span class="flaticon-shower"></span>2</li>
+                                  <li><span class="flaticon-shower"></span>2</li>
                                     <li><span class="flaticon-king-size"></span>3</li>
-                                    <li><span class="flaticon-mountains"></span>Near Mountain</li> --}}
+                                    <li><span class="flaticon-mountains"></span>Near Mountain</li>
                                 </ul>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 @endforeach
