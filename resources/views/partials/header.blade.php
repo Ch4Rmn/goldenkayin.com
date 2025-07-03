@@ -65,10 +65,11 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="/" class="nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
+                        <a href="/" style="text-shadow:1px 1px 1px black"
+                            class="nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('about') }}"
+                        <a href="{{ url('about') }}" style="text-shadow:1px 1px 1px black"
                             class="nav-link {{ Request::is('about') ? 'active' : '' }}">About</a>
                     </li>
                     {{-- <li class="nav-item">
@@ -76,20 +77,20 @@
                             class="nav-link {{ Request::is('destination') ? 'active' : '' }}">destination</a>
                     </li> --}}
                     <li class="nav-item">
-                        <a href="{{ url('manpower') }}"
+                        <a href="{{ url('manpower') }}" style="text-shadow:1px 1px 1px black"
                             class="nav-link {{ Request::is('manpower') ? 'active' : '' }}">Manpower</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('fmenu') }}"
+                        <a href="{{ url('fmenu') }}" style="text-shadow:1px 1px 1px black"
                             class="nav-link {{ Request::is('fmenu') ? 'active' : '' }}">Restaurant
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('image') }}"
+                        <a href="{{ url('image') }}" style="text-shadow:1px 1px 1px black"
                             class="nav-link {{ Request::is('image') ? 'active' : '' }}">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('contact') }}"
+                        <a href="{{ url('contact') }}" style="text-shadow:1px 1px 1px black"
                             class="nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact</a>
                     </li>
                 </ul>
@@ -103,7 +104,8 @@
                             target="_blank" class="nav-link"><i class="fa fa-instagram"></i></a></li>
                 </ul>
                 <ul>
-                    <span class="" style="color:white !important">Monday - Friday: 10am – 6pm
+                    <span class="" style="color:white !important;text-shadow:1px 1px 1px black">Monday - Friday:
+                        10am – 6pm
                         | Sunday: 9am -
                         6pm</span>
                 </ul>
