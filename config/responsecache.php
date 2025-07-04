@@ -28,7 +28,7 @@ return [
      * When using the default CacheRequestFilter this setting controls the
      * default number of seconds responses must be cached.
      */
-    'cache_lifetime_in_seconds' => 3600, // ✅ 1 hour = 60 × 60 = 3600 seconds
+    'cache_lifetime_in_seconds' => 300, // ✅ 1 hour = 60 × 60 = 3600 seconds
 
     // 'cache_lifetime_in_seconds' => (int) env('RESPONSE_CACHE_LIFETIME', 60 * 60 * 24 * 7),
 
