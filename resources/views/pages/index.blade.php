@@ -368,7 +368,7 @@
                                     <br>
                                     {{--  --}}
                                     <section class="ftco-section services-section" style="">
-                                        <h1>Available Worker</h1>
+                                        <h1>Available Workers</h1>
                                         <div class="container-fluid">
 
                                             <div class="table-responsive">
@@ -383,7 +383,7 @@
                                                             <th>Image</th>
                                                             <th>Name</th>
                                                             <th>Ref Code</th>
-                                                            <th>Type</th>
+                                                            {{-- <th>Type</th> --}}
                                                             <th>Rest Day</th>
                                                             <th>From Agency</th>
                                                             <th>Available</th>
@@ -409,7 +409,7 @@
                                                                 </td>
                                                                 <td>{{ $manpower->name }}</td>
                                                                 <td>{{ $manpower->ref_code }}</td>
-                                                                <td>{{ $manpower->type }}</td>
+                                                                {{-- <td>{{ $manpower->type }}</td> --}}
                                                                 <td>{{ $manpower->rest_day_preference }}</td>
                                                                 <td>{{ $manpower->from_agency }}</td>
                                                                 <td>
