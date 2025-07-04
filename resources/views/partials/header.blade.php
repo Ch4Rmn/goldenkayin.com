@@ -130,3 +130,29 @@
             text-shadow: none !important;
         }
     </style>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="btn  shadow rounded"
+        style="position: fixed; bottom: 30px; right: 30px; z-index: 9999; display: none; width: 48px; height: 48px; font-size: 1.5rem;background-color:#f15d30 !important">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Show/hide button on scroll
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('scrollToTopBtn');
+            if (window.scrollY > 200) {
+                btn.style.display = 'block';
+            } else {
+                btn.style.display = 'none';
+            }
+        });
+
+        // Scroll to top on click
+        document.getElementById('scrollToTopBtn').onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    </script>
